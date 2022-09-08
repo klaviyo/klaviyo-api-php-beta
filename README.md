@@ -64,7 +64,7 @@ This SDK is organized into the following resources:
 
 # Installation
 
-You can install this package using either [Packagist](https://packagist.org/packages/klaviyo/sdk-beta), or the source code.
+You can install this package using either [our Packagist package](https://packagist.org/packages/klaviyo/sdk-beta), or this source code.
 
 ## Option 1: Packagist
 
