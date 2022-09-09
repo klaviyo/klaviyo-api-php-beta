@@ -1316,7 +1316,7 @@ class ListsApi
      * Get List
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1334,7 +1334,7 @@ class ListsApi
      * Get List
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1503,7 +1503,7 @@ class ListsApi
      * Get List
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1524,7 +1524,7 @@ class ListsApi
      * Get List
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1579,7 +1579,7 @@ class ListsApi
      * Create request for operation 'getList'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1695,7 +1695,7 @@ class ListsApi
      * Get List Profiles
      *
      * @param  string $list_id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;email&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;phone_number&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;push_token&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;_kx&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -1715,7 +1715,7 @@ class ListsApi
      * Get List Profiles
      *
      * @param  string $list_id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;email&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;phone_number&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;push_token&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;_kx&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -1886,7 +1886,7 @@ class ListsApi
      * Get List Profiles
      *
      * @param  string $list_id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;email&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;phone_number&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;push_token&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;_kx&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -1909,7 +1909,7 @@ class ListsApi
      * Get List Profiles
      *
      * @param  string $list_id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;email&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;phone_number&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;push_token&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;_kx&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -1966,7 +1966,7 @@ class ListsApi
      * Create request for operation 'getListProfiles'
      *
      * @param  string $list_id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;email&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;phone_number&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;push_token&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;_kx&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -2499,7 +2499,7 @@ class ListsApi
      *
      * Get Lists
      *
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;name&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;greater-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;greater-than&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -2518,7 +2518,7 @@ class ListsApi
      *
      * Get Lists
      *
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;name&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;greater-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;greater-than&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -2688,7 +2688,7 @@ class ListsApi
      *
      * Get Lists
      *
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;name&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;greater-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;greater-than&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -2710,7 +2710,7 @@ class ListsApi
      *
      * Get Lists
      *
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;name&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;greater-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;greater-than&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -2766,7 +2766,7 @@ class ListsApi
     /**
      * Create request for operation 'getLists'
      *
-     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_list For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;name&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;greater-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;greater-than&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *

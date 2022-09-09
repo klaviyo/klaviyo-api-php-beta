@@ -3125,7 +3125,7 @@ class CatalogsApi
      *
      * Get Catalog Categories
      *
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -3145,7 +3145,7 @@ class CatalogsApi
      *
      * Get Catalog Categories
      *
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -3316,7 +3316,7 @@ class CatalogsApi
      *
      * Get Catalog Categories
      *
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -3339,7 +3339,7 @@ class CatalogsApi
      *
      * Get Catalog Categories
      *
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -3396,7 +3396,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getCatalogCategories'
      *
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -3528,7 +3528,7 @@ class CatalogsApi
      * Get Catalog Category
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3546,7 +3546,7 @@ class CatalogsApi
      * Get Catalog Category
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3715,7 +3715,7 @@ class CatalogsApi
      * Get Catalog Category
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3736,7 +3736,7 @@ class CatalogsApi
      * Get Catalog Category
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3791,7 +3791,7 @@ class CatalogsApi
      * Create request for operation 'getCatalogCategory'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3907,8 +3907,8 @@ class CatalogsApi
      * Get Catalog Category Items
      *
      * @param  string $category_id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -3930,8 +3930,8 @@ class CatalogsApi
      * Get Catalog Category Items
      *
      * @param  string $category_id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -4104,8 +4104,8 @@ class CatalogsApi
      * Get Catalog Category Items
      *
      * @param  string $category_id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -4130,8 +4130,8 @@ class CatalogsApi
      * Get Catalog Category Items
      *
      * @param  string $category_id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -4190,8 +4190,8 @@ class CatalogsApi
      * Create request for operation 'getCatalogCategoryItems'
      *
      * @param  string $category_id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -4754,8 +4754,8 @@ class CatalogsApi
      * Get Catalog Item
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -4774,8 +4774,8 @@ class CatalogsApi
      * Get Catalog Item
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -4945,8 +4945,8 @@ class CatalogsApi
      * Get Catalog Item
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -4968,8 +4968,8 @@ class CatalogsApi
      * Get Catalog Item
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -5025,8 +5025,8 @@ class CatalogsApi
      * Create request for operation 'getCatalogItem'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -5161,7 +5161,7 @@ class CatalogsApi
      * Get Catalog Item Categories
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -5182,7 +5182,7 @@ class CatalogsApi
      * Get Catalog Item Categories
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -5354,7 +5354,7 @@ class CatalogsApi
      * Get Catalog Item Categories
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -5378,7 +5378,7 @@ class CatalogsApi
      * Get Catalog Item Categories
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -5436,7 +5436,7 @@ class CatalogsApi
      * Create request for operation 'getCatalogItemCategories'
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -5980,7 +5980,7 @@ class CatalogsApi
      * Get Catalog Item Variants
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -6001,7 +6001,7 @@ class CatalogsApi
      * Get Catalog Item Variants
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -6173,7 +6173,7 @@ class CatalogsApi
      * Get Catalog Item Variants
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -6197,7 +6197,7 @@ class CatalogsApi
      * Get Catalog Item Variants
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -6255,7 +6255,7 @@ class CatalogsApi
      * Create request for operation 'getCatalogItemVariants'
      *
      * @param  string $item_id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -6400,8 +6400,8 @@ class CatalogsApi
      *
      * Get Catalog Items
      *
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -6422,8 +6422,8 @@ class CatalogsApi
      *
      * Get Catalog Items
      *
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -6595,8 +6595,8 @@ class CatalogsApi
      *
      * Get Catalog Items
      *
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -6620,8 +6620,8 @@ class CatalogsApi
      *
      * Get Catalog Items
      *
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -6679,8 +6679,8 @@ class CatalogsApi
     /**
      * Create request for operation 'getCatalogItems'
      *
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;category&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -6831,7 +6831,7 @@ class CatalogsApi
      * Get Catalog Variant
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6849,7 +6849,7 @@ class CatalogsApi
      * Get Catalog Variant
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -7018,7 +7018,7 @@ class CatalogsApi
      * Get Catalog Variant
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7039,7 +7039,7 @@ class CatalogsApi
      * Get Catalog Variant
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7094,7 +7094,7 @@ class CatalogsApi
      * Create request for operation 'getCatalogVariant'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7209,7 +7209,7 @@ class CatalogsApi
      *
      * Get Catalog Variants
      *
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -7229,7 +7229,7 @@ class CatalogsApi
      *
      * Get Catalog Variants
      *
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -7400,7 +7400,7 @@ class CatalogsApi
      *
      * Get Catalog Variants
      *
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -7423,7 +7423,7 @@ class CatalogsApi
      *
      * Get Catalog Variants
      *
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -7480,7 +7480,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getCatalogVariants'
      *
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;ids&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;item&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;sku&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;title&#x60;: &#x60;contains&#x60;&lt;br&gt;&#x60;published&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -7612,8 +7612,8 @@ class CatalogsApi
      * Get Create Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -7632,8 +7632,8 @@ class CatalogsApi
      * Get Create Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -7803,8 +7803,8 @@ class CatalogsApi
      * Get Create Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -7826,8 +7826,8 @@ class CatalogsApi
      * Get Create Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -7883,8 +7883,8 @@ class CatalogsApi
      * Create request for operation 'getCreateCategoriesJob'
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -8018,7 +8018,7 @@ class CatalogsApi
      *
      * Get Create Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -8037,7 +8037,7 @@ class CatalogsApi
      *
      * Get Create Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -8207,7 +8207,7 @@ class CatalogsApi
      *
      * Get Create Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -8229,7 +8229,7 @@ class CatalogsApi
      *
      * Get Create Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -8285,7 +8285,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getCreateCategoriesJobs'
      *
-     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -8407,8 +8407,8 @@ class CatalogsApi
      * Get Create Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -8427,8 +8427,8 @@ class CatalogsApi
      * Get Create Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -8598,8 +8598,8 @@ class CatalogsApi
      * Get Create Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -8621,8 +8621,8 @@ class CatalogsApi
      * Get Create Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -8678,8 +8678,8 @@ class CatalogsApi
      * Create request for operation 'getCreateItemsJob'
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -8813,7 +8813,7 @@ class CatalogsApi
      *
      * Get Create Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -8832,7 +8832,7 @@ class CatalogsApi
      *
      * Get Create Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -9002,7 +9002,7 @@ class CatalogsApi
      *
      * Get Create Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -9024,7 +9024,7 @@ class CatalogsApi
      *
      * Get Create Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -9080,7 +9080,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getCreateItemsJobs'
      *
-     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -9202,8 +9202,8 @@ class CatalogsApi
      * Get Create Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -9222,8 +9222,8 @@ class CatalogsApi
      * Get Create Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -9393,8 +9393,8 @@ class CatalogsApi
      * Get Create Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -9416,8 +9416,8 @@ class CatalogsApi
      * Get Create Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -9473,8 +9473,8 @@ class CatalogsApi
      * Create request for operation 'getCreateVariantsJob'
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -9608,7 +9608,7 @@ class CatalogsApi
      *
      * Get Create Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -9627,7 +9627,7 @@ class CatalogsApi
      *
      * Get Create Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -9797,7 +9797,7 @@ class CatalogsApi
      *
      * Get Create Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -9819,7 +9819,7 @@ class CatalogsApi
      *
      * Get Create Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -9875,7 +9875,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getCreateVariantsJobs'
      *
-     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_create_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -9997,7 +9997,7 @@ class CatalogsApi
      * Get Delete Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -10015,7 +10015,7 @@ class CatalogsApi
      * Get Delete Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -10184,7 +10184,7 @@ class CatalogsApi
      * Get Delete Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10205,7 +10205,7 @@ class CatalogsApi
      * Get Delete Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10260,7 +10260,7 @@ class CatalogsApi
      * Create request for operation 'getDeleteCategoriesJob'
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10375,7 +10375,7 @@ class CatalogsApi
      *
      * Get Delete Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -10394,7 +10394,7 @@ class CatalogsApi
      *
      * Get Delete Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -10564,7 +10564,7 @@ class CatalogsApi
      *
      * Get Delete Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -10586,7 +10586,7 @@ class CatalogsApi
      *
      * Get Delete Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -10642,7 +10642,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getDeleteCategoriesJobs'
      *
-     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -10764,7 +10764,7 @@ class CatalogsApi
      * Get Delete Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -10782,7 +10782,7 @@ class CatalogsApi
      * Get Delete Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -10951,7 +10951,7 @@ class CatalogsApi
      * Get Delete Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10972,7 +10972,7 @@ class CatalogsApi
      * Get Delete Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11027,7 +11027,7 @@ class CatalogsApi
      * Create request for operation 'getDeleteItemsJob'
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -11142,7 +11142,7 @@ class CatalogsApi
      *
      * Get Delete Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -11161,7 +11161,7 @@ class CatalogsApi
      *
      * Get Delete Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -11331,7 +11331,7 @@ class CatalogsApi
      *
      * Get Delete Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -11353,7 +11353,7 @@ class CatalogsApi
      *
      * Get Delete Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -11409,7 +11409,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getDeleteItemsJobs'
      *
-     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -11531,7 +11531,7 @@ class CatalogsApi
      * Get Delete Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -11549,7 +11549,7 @@ class CatalogsApi
      * Get Delete Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -11718,7 +11718,7 @@ class CatalogsApi
      * Get Delete Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11739,7 +11739,7 @@ class CatalogsApi
      * Get Delete Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11794,7 +11794,7 @@ class CatalogsApi
      * Create request for operation 'getDeleteVariantsJob'
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -11909,7 +11909,7 @@ class CatalogsApi
      *
      * Get Delete Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -11928,7 +11928,7 @@ class CatalogsApi
      *
      * Get Delete Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -12098,7 +12098,7 @@ class CatalogsApi
      *
      * Get Delete Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -12120,7 +12120,7 @@ class CatalogsApi
      *
      * Get Delete Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -12176,7 +12176,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getDeleteVariantsJobs'
      *
-     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_delete_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -12298,8 +12298,8 @@ class CatalogsApi
      * Get Update Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -12318,8 +12318,8 @@ class CatalogsApi
      * Get Update Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -12489,8 +12489,8 @@ class CatalogsApi
      * Get Update Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -12512,8 +12512,8 @@ class CatalogsApi
      * Get Update Categories Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -12569,8 +12569,8 @@ class CatalogsApi
      * Create request for operation 'getUpdateCategoriesJob'
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_category For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -12704,7 +12704,7 @@ class CatalogsApi
      *
      * Get Update Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -12723,7 +12723,7 @@ class CatalogsApi
      *
      * Get Update Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -12893,7 +12893,7 @@ class CatalogsApi
      *
      * Get Update Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -12915,7 +12915,7 @@ class CatalogsApi
      *
      * Get Update Categories Jobs
      *
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -12971,7 +12971,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getUpdateCategoriesJobs'
      *
-     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_category_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -13093,8 +13093,8 @@ class CatalogsApi
      * Get Update Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -13113,8 +13113,8 @@ class CatalogsApi
      * Get Update Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -13284,8 +13284,8 @@ class CatalogsApi
      * Get Update Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -13307,8 +13307,8 @@ class CatalogsApi
      * Get Update Items Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -13364,8 +13364,8 @@ class CatalogsApi
      * Create request for operation 'getUpdateItemsJob'
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_item For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -13499,7 +13499,7 @@ class CatalogsApi
      *
      * Get Update Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -13518,7 +13518,7 @@ class CatalogsApi
      *
      * Get Update Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -13688,7 +13688,7 @@ class CatalogsApi
      *
      * Get Update Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -13710,7 +13710,7 @@ class CatalogsApi
      *
      * Get Update Items Jobs
      *
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -13766,7 +13766,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getUpdateItemsJobs'
      *
-     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_item_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -13888,8 +13888,8 @@ class CatalogsApi
      * Get Update Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -13908,8 +13908,8 @@ class CatalogsApi
      * Get Update Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -14079,8 +14079,8 @@ class CatalogsApi
      * Get Update Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -14102,8 +14102,8 @@ class CatalogsApi
      * Get Update Variants Job
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -14159,8 +14159,8 @@ class CatalogsApi
      * Create request for operation 'getUpdateVariantsJob'
      *
      * @param  string $job_id  (required)
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_catalog_variant For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -14294,7 +14294,7 @@ class CatalogsApi
      *
      * Get Update Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -14313,7 +14313,7 @@ class CatalogsApi
      *
      * Get Update Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -14483,7 +14483,7 @@ class CatalogsApi
      *
      * Get Update Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -14505,7 +14505,7 @@ class CatalogsApi
      *
      * Get Update Variants Jobs
      *
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
@@ -14561,7 +14561,7 @@ class CatalogsApi
     /**
      * Create request for operation 'getUpdateVariantsJobs'
      *
-     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_catalog_variant_bulk_update_job For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60; (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *

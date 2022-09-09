@@ -122,8 +122,8 @@ class FlowsApi
      * Get Flow
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -142,8 +142,8 @@ class FlowsApi
      * Get Flow
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -313,8 +313,8 @@ class FlowsApi
      * Get Flow
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -336,8 +336,8 @@ class FlowsApi
      * Get Flow
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -393,8 +393,8 @@ class FlowsApi
      * Create request for operation 'getFlow'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -529,9 +529,9 @@ class FlowsApi
      * Get Flow Action
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -550,9 +550,9 @@ class FlowsApi
      * Get Flow Action
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -722,9 +722,9 @@ class FlowsApi
      * Get Flow Action
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -746,9 +746,9 @@ class FlowsApi
      * Get Flow Action
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -804,9 +804,9 @@ class FlowsApi
      * Create request for operation 'getFlowAction'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -950,7 +950,7 @@ class FlowsApi
      * Get Flow Action Flow
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -968,7 +968,7 @@ class FlowsApi
      * Get Flow Action Flow
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1137,7 +1137,7 @@ class FlowsApi
      * Get Flow Action Flow
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1158,7 +1158,7 @@ class FlowsApi
      * Get Flow Action Flow
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1213,7 +1213,7 @@ class FlowsApi
      * Create request for operation 'getFlowActionFlow'
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1329,7 +1329,7 @@ class FlowsApi
      * Get Flow Action Messages
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -1349,7 +1349,7 @@ class FlowsApi
      * Get Flow Action Messages
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -1520,7 +1520,7 @@ class FlowsApi
      * Get Flow Action Messages
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -1543,7 +1543,7 @@ class FlowsApi
      * Get Flow Action Messages
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -1600,7 +1600,7 @@ class FlowsApi
      * Create request for operation 'getFlowActionMessages'
      *
      * @param  string $action_id  (required)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -2148,7 +2148,7 @@ class FlowsApi
      * Get Flow Flow Actions
      *
      * @param  string $flow_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;action_type&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -2168,7 +2168,7 @@ class FlowsApi
      * Get Flow Flow Actions
      *
      * @param  string $flow_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;action_type&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -2339,7 +2339,7 @@ class FlowsApi
      * Get Flow Flow Actions
      *
      * @param  string $flow_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;action_type&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -2362,7 +2362,7 @@ class FlowsApi
      * Get Flow Flow Actions
      *
      * @param  string $flow_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;action_type&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -2419,7 +2419,7 @@ class FlowsApi
      * Create request for operation 'getFlowFlowActions'
      *
      * @param  string $flow_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;action_type&#x60;: &#x60;any&#x60;, &#x60;equals&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
      *
@@ -2555,8 +2555,8 @@ class FlowsApi
      * Get Flow Message
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -2575,8 +2575,8 @@ class FlowsApi
      * Get Flow Message
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -2746,8 +2746,8 @@ class FlowsApi
      * Get Flow Message
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -2769,8 +2769,8 @@ class FlowsApi
      * Get Flow Message
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -2826,8 +2826,8 @@ class FlowsApi
      * Create request for operation 'getFlowMessage'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow_message For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -2962,7 +2962,7 @@ class FlowsApi
      * Get Flow Message Action
      *
      * @param  string $message_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2980,7 +2980,7 @@ class FlowsApi
      * Get Flow Message Action
      *
      * @param  string $message_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3149,7 +3149,7 @@ class FlowsApi
      * Get Flow Message Action
      *
      * @param  string $message_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3170,7 +3170,7 @@ class FlowsApi
      * Get Flow Message Action
      *
      * @param  string $message_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3225,7 +3225,7 @@ class FlowsApi
      * Create request for operation 'getFlowMessageAction'
      *
      * @param  string $message_id  (required)
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4136,8 +4136,8 @@ class FlowsApi
      *
      * Get Flows
      *
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;archived&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;trigger_type&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -4157,8 +4157,8 @@ class FlowsApi
      *
      * Get Flows
      *
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;archived&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;trigger_type&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -4329,8 +4329,8 @@ class FlowsApi
      *
      * Get Flows
      *
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;archived&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;trigger_type&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -4353,8 +4353,8 @@ class FlowsApi
      *
      * Get Flows
      *
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;archived&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;trigger_type&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)
@@ -4411,8 +4411,8 @@ class FlowsApi
     /**
      * Create request for operation 'getFlows'
      *
-     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_flow_action For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_flow For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;id&#x60;: &#x60;any&#x60;&lt;br&gt;&#x60;name&#x60;: &#x60;contains&#x60;, &#x60;ends-with&#x60;, &#x60;equals&#x60;, &#x60;starts-with&#x60;&lt;br&gt;&#x60;status&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;archived&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;created&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;updated&#x60;: &#x60;equals&#x60;, &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;trigger_type&#x60;: &#x60;equals&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $sort For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sorting (optional)

@@ -122,7 +122,7 @@ class MetricsApi
      * Get Metric
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -140,7 +140,7 @@ class MetricsApi
      * Get Metric
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -309,7 +309,7 @@ class MetricsApi
      * Get Metric
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -330,7 +330,7 @@ class MetricsApi
      * Get Metric
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -385,7 +385,7 @@ class MetricsApi
      * Create request for operation 'getMetric'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -863,7 +863,7 @@ class MetricsApi
      *
      * Get Metrics
      *
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -881,7 +881,7 @@ class MetricsApi
      *
      * Get Metrics
      *
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -1050,7 +1050,7 @@ class MetricsApi
      *
      * Get Metrics
      *
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
      * @throws \InvalidArgumentException
@@ -1071,7 +1071,7 @@ class MetricsApi
      *
      * Get Metrics
      *
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
      * @throws \InvalidArgumentException
@@ -1126,7 +1126,7 @@ class MetricsApi
     /**
      * Create request for operation 'getMetrics'
      *
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
      *
      * @throws \InvalidArgumentException

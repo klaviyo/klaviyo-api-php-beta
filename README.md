@@ -1,6 +1,6 @@
 # Klaviyo PHP SDK (Beta API)
 
-- SDK version: 0.0.1.20220907
+- SDK version: 1.0.0.20220907
 
 ## Signup Form for Beta API Access
 

@@ -485,9 +485,9 @@ class EventsApi
      * Get Event
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -506,9 +506,9 @@ class EventsApi
      * Get Event
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
@@ -678,9 +678,9 @@ class EventsApi
      * Get Event
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -702,9 +702,9 @@ class EventsApi
      * Get Event
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -760,9 +760,9 @@ class EventsApi
      * Create request for operation 'getEvent'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      *
      * @throws \InvalidArgumentException
@@ -906,7 +906,7 @@ class EventsApi
      * Get Event Metrics
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -924,7 +924,7 @@ class EventsApi
      * Get Event Metrics
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1093,7 +1093,7 @@ class EventsApi
      * Get Event Metrics
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1114,7 +1114,7 @@ class EventsApi
      * Get Event Metrics
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1169,7 +1169,7 @@ class EventsApi
      * Create request for operation 'getEventMetrics'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1285,7 +1285,7 @@ class EventsApi
      * Get Event Profiles
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1303,7 +1303,7 @@ class EventsApi
      * Get Event Profiles
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1472,7 +1472,7 @@ class EventsApi
      * Get Event Profiles
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1493,7 +1493,7 @@ class EventsApi
      * Get Event Profiles
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1548,7 +1548,7 @@ class EventsApi
      * Create request for operation 'getEventProfiles'
      *
      * @param  string $id  (required)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2047,9 +2047,9 @@ class EventsApi
      *
      * Get Events
      *
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;metric_id&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;datetime&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;timestamp&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -2070,9 +2070,9 @@ class EventsApi
      *
      * Get Events
      *
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;metric_id&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;datetime&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;timestamp&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -2244,9 +2244,9 @@ class EventsApi
      *
      * Get Events
      *
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;metric_id&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;datetime&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;timestamp&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -2270,9 +2270,9 @@ class EventsApi
      *
      * Get Events
      *
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;metric_id&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;datetime&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;timestamp&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
@@ -2330,9 +2330,9 @@ class EventsApi
     /**
      * Create request for operation 'getEvents'
      *
-     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
-     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering (optional)
+     * @param  string[] $fields_event For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_metric For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
+     * @param  string[] $fields_profile For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#sparse-fieldsets (optional)
      * @param  string $filter For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#filtering&lt;br&gt;Allowed field(s)/operator(s):&lt;br&gt;&#x60;metric_id&#x60;: &#x60;equals&#x60;&lt;br&gt;&#x60;datetime&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60;&lt;br&gt;&#x60;timestamp&#x60;: &#x60;greater-or-equal&#x60;, &#x60;greater-than&#x60;, &#x60;less-or-equal&#x60;, &#x60;less-than&#x60; (optional)
      * @param  string[] $include For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#relationships (optional)
      * @param  string $page_cursor For more information please visit https://developers.klaviyo.com/en/v2022-09-07.pre/reference/api-overview#pagination (optional)
