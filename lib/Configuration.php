@@ -101,7 +101,7 @@ class Configuration
      *
      * @var string
      */
-    protected $userAgent = 'klaviyo/sdk-beta/1.0.0.20220907';
+    protected $userAgent = 'klaviyo/sdk-beta/1.0.1.20220907';
 
     /**
      * Debug switch (default set to false)
