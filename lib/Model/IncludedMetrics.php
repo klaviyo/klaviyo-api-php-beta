@@ -60,8 +60,8 @@ class IncludedMetrics implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'type' => 'string',
         'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\GetMetricResponseCollectionDataInnerAttributes',
-        'links' => '\KlaviyoBeta\Model\GetCatalogItemResponseCollectionWithIncludedSectionDataInnerLinks'
+        'attributes' => '\KlaviyoBeta\Model\IncludedMetricsAttributes',
+        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
     ];
 
     /**
@@ -317,7 +317,7 @@ class IncludedMetrics implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attributes
      *
-     * @return \KlaviyoBeta\Model\GetMetricResponseCollectionDataInnerAttributes
+     * @return \KlaviyoBeta\Model\IncludedMetricsAttributes
      */
     public function getAttributes()
     {
@@ -327,7 +327,7 @@ class IncludedMetrics implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attributes
      *
-     * @param \KlaviyoBeta\Model\GetMetricResponseCollectionDataInnerAttributes $attributes attributes
+     * @param \KlaviyoBeta\Model\IncludedMetricsAttributes $attributes attributes
      *
      * @return self
      */
@@ -341,7 +341,7 @@ class IncludedMetrics implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets links
      *
-     * @return \KlaviyoBeta\Model\GetCatalogItemResponseCollectionWithIncludedSectionDataInnerLinks
+     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
      */
     public function getLinks()
     {
@@ -351,7 +351,7 @@ class IncludedMetrics implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets links
      *
-     * @param \KlaviyoBeta\Model\GetCatalogItemResponseCollectionWithIncludedSectionDataInnerLinks $links links
+     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
      *
      * @return self
      */

@@ -1,6 +1,6 @@
 <?php
 /**
- * IncludedProfiles
+ * IncludedFlowMessagesAttributesContent
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoBeta\ObjectSerializer;
 
 /**
- * IncludedProfiles Class Doc Comment
+ * IncludedFlowMessagesAttributesContent Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoBeta
@@ -41,7 +41,7 @@ use \KlaviyoBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
+class IncludedFlowMessagesAttributesContent implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'IncludedProfiles';
+    protected static $openAPIModelName = 'IncludedFlowMessages_attributes_content';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,12 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => 'string',
-        'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\IncludedProfilesAttributes',
-        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
+        'subject' => 'string',
+        'preview_text' => 'string',
+        'from_email' => 'string',
+        'from_name' => 'string',
+        'body' => 'string',
+        'media' => 'string'
     ];
 
     /**
@@ -72,10 +74,12 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'type' => null,
-        'id' => null,
-        'attributes' => null,
-        'links' => null
+        'subject' => null,
+        'preview_text' => null,
+        'from_email' => null,
+        'from_name' => null,
+        'body' => null,
+        'media' => null
     ];
 
     /**
@@ -105,10 +109,12 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => 'type',
-        'id' => 'id',
-        'attributes' => 'attributes',
-        'links' => 'links'
+        'subject' => 'subject',
+        'preview_text' => 'preview_text',
+        'from_email' => 'from_email',
+        'from_name' => 'from_name',
+        'body' => 'body',
+        'media' => 'media'
     ];
 
     /**
@@ -117,10 +123,12 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'id' => 'setId',
-        'attributes' => 'setAttributes',
-        'links' => 'setLinks'
+        'subject' => 'setSubject',
+        'preview_text' => 'setPreviewText',
+        'from_email' => 'setFromEmail',
+        'from_name' => 'setFromName',
+        'body' => 'setBody',
+        'media' => 'setMedia'
     ];
 
     /**
@@ -129,10 +137,12 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'id' => 'getId',
-        'attributes' => 'getAttributes',
-        'links' => 'getLinks'
+        'subject' => 'getSubject',
+        'preview_text' => 'getPreviewText',
+        'from_email' => 'getFromEmail',
+        'from_name' => 'getFromName',
+        'body' => 'getBody',
+        'media' => 'getMedia'
     ];
 
     /**
@@ -176,19 +186,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    public const TYPE_PROFILE = 'profile';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getTypeAllowableValues()
-    {
-        return [
-            self::TYPE_PROFILE,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -205,10 +202,12 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['type'] = $data['type'] ?? null;
-        $this->container['id'] = $data['id'] ?? null;
-        $this->container['attributes'] = $data['attributes'] ?? null;
-        $this->container['links'] = $data['links'] ?? null;
+        $this->container['subject'] = $data['subject'] ?? null;
+        $this->container['preview_text'] = $data['preview_text'] ?? null;
+        $this->container['from_email'] = $data['from_email'] ?? null;
+        $this->container['from_name'] = $data['from_name'] ?? null;
+        $this->container['body'] = $data['body'] ?? null;
+        $this->container['media'] = $data['media'] ?? null;
     }
 
     /**
@@ -220,26 +219,23 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
+        if ($this->container['subject'] === null) {
+            $invalidProperties[] = "'subject' can't be null";
         }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'type', must be one of '%s'",
-                $this->container['type'],
-                implode("', '", $allowedValues)
-            );
+        if ($this->container['preview_text'] === null) {
+            $invalidProperties[] = "'preview_text' can't be null";
         }
-
-        if ($this->container['id'] === null) {
-            $invalidProperties[] = "'id' can't be null";
+        if ($this->container['from_email'] === null) {
+            $invalidProperties[] = "'from_email' can't be null";
         }
-        if ($this->container['attributes'] === null) {
-            $invalidProperties[] = "'attributes' can't be null";
+        if ($this->container['from_name'] === null) {
+            $invalidProperties[] = "'from_name' can't be null";
         }
-        if ($this->container['links'] === null) {
-            $invalidProperties[] = "'links' can't be null";
+        if ($this->container['body'] === null) {
+            $invalidProperties[] = "'body' can't be null";
+        }
+        if ($this->container['media'] === null) {
+            $invalidProperties[] = "'media' can't be null";
         }
         return $invalidProperties;
     }
@@ -257,107 +253,145 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets type
+     * Gets subject
      *
      * @return string
      */
-    public function getType()
+    public function getSubject()
     {
-        return $this->container['type'];
+        return $this->container['subject'];
     }
 
     /**
-     * Sets type
+     * Sets subject
      *
-     * @param string $type type
+     * @param string $subject subject
      *
      * @return self
      */
-    public function setType($type)
+    public function setSubject($subject)
     {
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['type'] = $type;
+        $this->container['subject'] = $subject;
 
         return $this;
     }
 
     /**
-     * Gets id
+     * Gets preview_text
      *
      * @return string
      */
-    public function getId()
+    public function getPreviewText()
     {
-        return $this->container['id'];
+        return $this->container['preview_text'];
     }
 
     /**
-     * Sets id
+     * Sets preview_text
      *
-     * @param string $id id
+     * @param string $preview_text preview_text
      *
      * @return self
      */
-    public function setId($id)
+    public function setPreviewText($preview_text)
     {
-        $this->container['id'] = $id;
+        $this->container['preview_text'] = $preview_text;
 
         return $this;
     }
 
     /**
-     * Gets attributes
+     * Gets from_email
      *
-     * @return \KlaviyoBeta\Model\IncludedProfilesAttributes
+     * @return string
      */
-    public function getAttributes()
+    public function getFromEmail()
     {
-        return $this->container['attributes'];
+        return $this->container['from_email'];
     }
 
     /**
-     * Sets attributes
+     * Sets from_email
      *
-     * @param \KlaviyoBeta\Model\IncludedProfilesAttributes $attributes attributes
+     * @param string $from_email from_email
      *
      * @return self
      */
-    public function setAttributes($attributes)
+    public function setFromEmail($from_email)
     {
-        $this->container['attributes'] = $attributes;
+        $this->container['from_email'] = $from_email;
 
         return $this;
     }
 
     /**
-     * Gets links
+     * Gets from_name
      *
-     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
+     * @return string
      */
-    public function getLinks()
+    public function getFromName()
     {
-        return $this->container['links'];
+        return $this->container['from_name'];
     }
 
     /**
-     * Sets links
+     * Sets from_name
      *
-     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
+     * @param string $from_name from_name
      *
      * @return self
      */
-    public function setLinks($links)
+    public function setFromName($from_name)
     {
-        $this->container['links'] = $links;
+        $this->container['from_name'] = $from_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets body
+     *
+     * @return string
+     */
+    public function getBody()
+    {
+        return $this->container['body'];
+    }
+
+    /**
+     * Sets body
+     *
+     * @param string $body body
+     *
+     * @return self
+     */
+    public function setBody($body)
+    {
+        $this->container['body'] = $body;
+
+        return $this;
+    }
+
+    /**
+     * Gets media
+     *
+     * @return string
+     */
+    public function getMedia()
+    {
+        return $this->container['media'];
+    }
+
+    /**
+     * Sets media
+     *
+     * @param string $media media
+     *
+     * @return self
+     */
+    public function setMedia($media)
+    {
+        $this->container['media'] = $media;
 
         return $this;
     }

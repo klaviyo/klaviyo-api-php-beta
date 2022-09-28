@@ -1,6 +1,6 @@
 <?php
 /**
- * IncludedProfiles
+ * CatalogVariantCreateQueryAsSubResourceRelationships
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoBeta\ObjectSerializer;
 
 /**
- * IncludedProfiles Class Doc Comment
+ * CatalogVariantCreateQueryAsSubResourceRelationships Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoBeta
@@ -41,7 +41,7 @@ use \KlaviyoBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
+class CatalogVariantCreateQueryAsSubResourceRelationships implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'IncludedProfiles';
+    protected static $openAPIModelName = 'CatalogVariantCreateQueryAsSubResource_relationships';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => 'string',
-        'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\IncludedProfilesAttributes',
-        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
+        'items' => '\KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceRelationshipsItems'
     ];
 
     /**
@@ -72,10 +69,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'type' => null,
-        'id' => null,
-        'attributes' => null,
-        'links' => null
+        'items' => null
     ];
 
     /**
@@ -105,10 +99,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => 'type',
-        'id' => 'id',
-        'attributes' => 'attributes',
-        'links' => 'links'
+        'items' => 'items'
     ];
 
     /**
@@ -117,10 +108,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'id' => 'setId',
-        'attributes' => 'setAttributes',
-        'links' => 'setLinks'
+        'items' => 'setItems'
     ];
 
     /**
@@ -129,10 +117,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'id' => 'getId',
-        'attributes' => 'getAttributes',
-        'links' => 'getLinks'
+        'items' => 'getItems'
     ];
 
     /**
@@ -176,19 +161,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    public const TYPE_PROFILE = 'profile';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getTypeAllowableValues()
-    {
-        return [
-            self::TYPE_PROFILE,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -205,10 +177,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['type'] = $data['type'] ?? null;
-        $this->container['id'] = $data['id'] ?? null;
-        $this->container['attributes'] = $data['attributes'] ?? null;
-        $this->container['links'] = $data['links'] ?? null;
+        $this->container['items'] = $data['items'] ?? null;
     }
 
     /**
@@ -220,27 +189,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
-        }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'type', must be one of '%s'",
-                $this->container['type'],
-                implode("', '", $allowedValues)
-            );
-        }
-
-        if ($this->container['id'] === null) {
-            $invalidProperties[] = "'id' can't be null";
-        }
-        if ($this->container['attributes'] === null) {
-            $invalidProperties[] = "'attributes' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalidProperties[] = "'links' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -257,107 +205,25 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets type
+     * Gets items
      *
-     * @return string
+     * @return \KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceRelationshipsItems|null
      */
-    public function getType()
+    public function getItems()
     {
-        return $this->container['type'];
+        return $this->container['items'];
     }
 
     /**
-     * Sets type
+     * Sets items
      *
-     * @param string $type type
+     * @param \KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceRelationshipsItems|null $items items
      *
      * @return self
      */
-    public function setType($type)
+    public function setItems($items)
     {
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets id
-     *
-     * @return string
-     */
-    public function getId()
-    {
-        return $this->container['id'];
-    }
-
-    /**
-     * Sets id
-     *
-     * @param string $id id
-     *
-     * @return self
-     */
-    public function setId($id)
-    {
-        $this->container['id'] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Gets attributes
-     *
-     * @return \KlaviyoBeta\Model\IncludedProfilesAttributes
-     */
-    public function getAttributes()
-    {
-        return $this->container['attributes'];
-    }
-
-    /**
-     * Sets attributes
-     *
-     * @param \KlaviyoBeta\Model\IncludedProfilesAttributes $attributes attributes
-     *
-     * @return self
-     */
-    public function setAttributes($attributes)
-    {
-        $this->container['attributes'] = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Gets links
-     *
-     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
-     */
-    public function getLinks()
-    {
-        return $this->container['links'];
-    }
-
-    /**
-     * Sets links
-     *
-     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
-     *
-     * @return self
-     */
-    public function setLinks($links)
-    {
-        $this->container['links'] = $links;
+        $this->container['items'] = $items;
 
         return $this;
     }

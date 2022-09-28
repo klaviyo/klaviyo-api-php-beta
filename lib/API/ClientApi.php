@@ -126,12 +126,11 @@ class ClientApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response
+     * @return void
      */
     public function createClientEvent($company_id, $event_create_query, $apiKey = null)
     {
-        list($response) = $this->createClientEventWithHttpInfo($company_id, $event_create_query, $apiKey);
-        return $response;
+        $this->createClientEventWithHttpInfo($company_id, $event_create_query, $apiKey);
     }
 
     /**
@@ -144,7 +143,7 @@ class ClientApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function createClientEventWithHttpInfo($company_id, $event_create_query, $apiKey = null)
     {
@@ -185,103 +184,10 @@ class ClientApi
                 );
             }
 
-            switch($statusCode) {
-                case 202:
-                    if ('array<string,mixed>' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('array&lt;string,mixed&gt;' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 400:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 500:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = 'array<string,mixed>';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-
-            $parsed_content = json_decode(json_encode($content), TRUE);
-            if (json_last_error() != JSON_ERROR_NONE) {
-                $parsed_content = $content;
-            }
-
-            return [
-                $parsed_content,
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
+            return [null, $statusCode, $response->getHeaders()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
-                case 202:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'array<string,mixed>',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
@@ -337,32 +243,14 @@ class ClientApi
      */
     public function createClientEventAsyncWithHttpInfo($company_id, $event_create_query, $apiKey = null)
     {
-        $returnType = 'array<string,mixed>';
+        $returnType = '';
         $request = $this->createClientEventRequest($company_id, $event_create_query, $apiKey);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
+                    return [null, $response->getStatusCode(), $response->getHeaders()];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();
@@ -500,12 +388,11 @@ class ClientApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response
+     * @return void
      */
     public function createClientProfile($company_id, $onsite_profile_create_query, $apiKey = null)
     {
-        list($response) = $this->createClientProfileWithHttpInfo($company_id, $onsite_profile_create_query, $apiKey);
-        return $response;
+        $this->createClientProfileWithHttpInfo($company_id, $onsite_profile_create_query, $apiKey);
     }
 
     /**
@@ -518,7 +405,7 @@ class ClientApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function createClientProfileWithHttpInfo($company_id, $onsite_profile_create_query, $apiKey = null)
     {
@@ -559,103 +446,10 @@ class ClientApi
                 );
             }
 
-            switch($statusCode) {
-                case 202:
-                    if ('array<string,mixed>' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('array&lt;string,mixed&gt;' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 400:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 500:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = 'array<string,mixed>';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-
-            $parsed_content = json_decode(json_encode($content), TRUE);
-            if (json_last_error() != JSON_ERROR_NONE) {
-                $parsed_content = $content;
-            }
-
-            return [
-                $parsed_content,
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
+            return [null, $statusCode, $response->getHeaders()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
-                case 202:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'array<string,mixed>',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
@@ -711,32 +505,14 @@ class ClientApi
      */
     public function createClientProfileAsyncWithHttpInfo($company_id, $onsite_profile_create_query, $apiKey = null)
     {
-        $returnType = 'array<string,mixed>';
+        $returnType = '';
         $request = $this->createClientProfileRequest($company_id, $onsite_profile_create_query, $apiKey);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
+                    return [null, $response->getStatusCode(), $response->getHeaders()];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();
@@ -870,16 +646,15 @@ class ClientApi
      * Create Client Subscription
      *
      * @param  string $company_id  (required)
-     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query onsite_subscription_create_query (required)
+     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query Creates a subscription and consent records for Email and or SMS channels based on the provided email and phone_number attributes respectively. One of either email or phone_number must be provided. To create a subscription and consent record for only one channel but still include the other channel as a profile property the consent channel can be provided as a top level attribute and the other channel can be included in the properties object. (required)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response
+     * @return void
      */
     public function createClientSubscription($company_id, $onsite_subscription_create_query, $apiKey = null)
     {
-        list($response) = $this->createClientSubscriptionWithHttpInfo($company_id, $onsite_subscription_create_query, $apiKey);
-        return $response;
+        $this->createClientSubscriptionWithHttpInfo($company_id, $onsite_subscription_create_query, $apiKey);
     }
 
     /**
@@ -888,11 +663,11 @@ class ClientApi
      * Create Client Subscription
      *
      * @param  string $company_id  (required)
-     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query (required)
+     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query Creates a subscription and consent records for Email and or SMS channels based on the provided email and phone_number attributes respectively. One of either email or phone_number must be provided. To create a subscription and consent record for only one channel but still include the other channel as a profile property the consent channel can be provided as a top level attribute and the other channel can be included in the properties object. (required)
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function createClientSubscriptionWithHttpInfo($company_id, $onsite_subscription_create_query, $apiKey = null)
     {
@@ -933,103 +708,10 @@ class ClientApi
                 );
             }
 
-            switch($statusCode) {
-                case 202:
-                    if ('array<string,mixed>' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('array&lt;string,mixed&gt;' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 400:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 500:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = 'array<string,mixed>';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-
-            $parsed_content = json_decode(json_encode($content), TRUE);
-            if (json_last_error() != JSON_ERROR_NONE) {
-                $parsed_content = $content;
-            }
-
-            return [
-                $parsed_content,
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
+            return [null, $statusCode, $response->getHeaders()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
-                case 202:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'array<string,mixed>',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
@@ -1057,7 +739,7 @@ class ClientApi
      * Create Client Subscription
      *
      * @param  string $company_id  (required)
-     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query (required)
+     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query Creates a subscription and consent records for Email and or SMS channels based on the provided email and phone_number attributes respectively. One of either email or phone_number must be provided. To create a subscription and consent record for only one channel but still include the other channel as a profile property the consent channel can be provided as a top level attribute and the other channel can be included in the properties object. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1078,39 +760,21 @@ class ClientApi
      * Create Client Subscription
      *
      * @param  string $company_id  (required)
-     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query (required)
+     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query Creates a subscription and consent records for Email and or SMS channels based on the provided email and phone_number attributes respectively. One of either email or phone_number must be provided. To create a subscription and consent record for only one channel but still include the other channel as a profile property the consent channel can be provided as a top level attribute and the other channel can be included in the properties object. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createClientSubscriptionAsyncWithHttpInfo($company_id, $onsite_subscription_create_query, $apiKey = null)
     {
-        $returnType = 'array<string,mixed>';
+        $returnType = '';
         $request = $this->createClientSubscriptionRequest($company_id, $onsite_subscription_create_query, $apiKey);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
+                    return [null, $response->getStatusCode(), $response->getHeaders()];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();
@@ -1133,7 +797,7 @@ class ClientApi
      * Create request for operation 'createClientSubscription'
      *
      * @param  string $company_id  (required)
-     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query (required)
+     * @param  \KlaviyoBeta\Model\OnsiteSubscriptionCreateQuery $onsite_subscription_create_query Creates a subscription and consent records for Email and or SMS channels based on the provided email and phone_number attributes respectively. One of either email or phone_number must be provided. To create a subscription and consent record for only one channel but still include the other channel as a profile property the consent channel can be provided as a top level attribute and the other channel can be included in the properties object. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

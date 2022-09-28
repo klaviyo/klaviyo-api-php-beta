@@ -60,8 +60,8 @@ class IncludedCategories implements ModelInterface, ArrayAccess, \JsonSerializab
     protected static $openAPITypes = [
         'type' => 'string',
         'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\GetCatalogCategoryResponseCollectionDataInnerAttributes',
-        'links' => '\KlaviyoBeta\Model\GetCatalogItemResponseCollectionWithIncludedSectionDataInnerLinks'
+        'attributes' => '\KlaviyoBeta\Model\IncludedCategoriesAttributes',
+        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
     ];
 
     /**
@@ -317,7 +317,7 @@ class IncludedCategories implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets attributes
      *
-     * @return \KlaviyoBeta\Model\GetCatalogCategoryResponseCollectionDataInnerAttributes
+     * @return \KlaviyoBeta\Model\IncludedCategoriesAttributes
      */
     public function getAttributes()
     {
@@ -327,7 +327,7 @@ class IncludedCategories implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets attributes
      *
-     * @param \KlaviyoBeta\Model\GetCatalogCategoryResponseCollectionDataInnerAttributes $attributes attributes
+     * @param \KlaviyoBeta\Model\IncludedCategoriesAttributes $attributes attributes
      *
      * @return self
      */
@@ -341,7 +341,7 @@ class IncludedCategories implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets links
      *
-     * @return \KlaviyoBeta\Model\GetCatalogItemResponseCollectionWithIncludedSectionDataInnerLinks
+     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
      */
     public function getLinks()
     {
@@ -351,7 +351,7 @@ class IncludedCategories implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets links
      *
-     * @param \KlaviyoBeta\Model\GetCatalogItemResponseCollectionWithIncludedSectionDataInnerLinks $links links
+     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
      *
      * @return self
      */

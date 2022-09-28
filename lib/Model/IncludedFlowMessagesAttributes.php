@@ -1,6 +1,6 @@
 <?php
 /**
- * IncludedProfiles
+ * IncludedFlowMessagesAttributes
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoBeta\ObjectSerializer;
 
 /**
- * IncludedProfiles Class Doc Comment
+ * IncludedFlowMessagesAttributes Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoBeta
@@ -41,7 +41,7 @@ use \KlaviyoBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
+class IncludedFlowMessagesAttributes implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'IncludedProfiles';
+    protected static $openAPIModelName = 'IncludedFlowMessages_attributes';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,11 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => 'string',
-        'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\IncludedProfilesAttributes',
-        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
+        'name' => 'string',
+        'channel' => 'string',
+        'content' => '\KlaviyoBeta\Model\IncludedFlowMessagesAttributesContent',
+        'created' => '\DateTime',
+        'updated' => '\DateTime'
     ];
 
     /**
@@ -72,10 +73,11 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'type' => null,
-        'id' => null,
-        'attributes' => null,
-        'links' => null
+        'name' => null,
+        'channel' => null,
+        'content' => null,
+        'created' => 'date-time',
+        'updated' => 'date-time'
     ];
 
     /**
@@ -105,10 +107,11 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => 'type',
-        'id' => 'id',
-        'attributes' => 'attributes',
-        'links' => 'links'
+        'name' => 'name',
+        'channel' => 'channel',
+        'content' => 'content',
+        'created' => 'created',
+        'updated' => 'updated'
     ];
 
     /**
@@ -117,10 +120,11 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'id' => 'setId',
-        'attributes' => 'setAttributes',
-        'links' => 'setLinks'
+        'name' => 'setName',
+        'channel' => 'setChannel',
+        'content' => 'setContent',
+        'created' => 'setCreated',
+        'updated' => 'setUpdated'
     ];
 
     /**
@@ -129,10 +133,11 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'id' => 'getId',
-        'attributes' => 'getAttributes',
-        'links' => 'getLinks'
+        'name' => 'getName',
+        'channel' => 'getChannel',
+        'content' => 'getContent',
+        'created' => 'getCreated',
+        'updated' => 'getUpdated'
     ];
 
     /**
@@ -176,19 +181,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    public const TYPE_PROFILE = 'profile';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getTypeAllowableValues()
-    {
-        return [
-            self::TYPE_PROFILE,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -205,10 +197,11 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['type'] = $data['type'] ?? null;
-        $this->container['id'] = $data['id'] ?? null;
-        $this->container['attributes'] = $data['attributes'] ?? null;
-        $this->container['links'] = $data['links'] ?? null;
+        $this->container['name'] = $data['name'] ?? null;
+        $this->container['channel'] = $data['channel'] ?? null;
+        $this->container['content'] = $data['content'] ?? null;
+        $this->container['created'] = $data['created'] ?? null;
+        $this->container['updated'] = $data['updated'] ?? null;
     }
 
     /**
@@ -220,26 +213,14 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
+        if ($this->container['name'] === null) {
+            $invalidProperties[] = "'name' can't be null";
         }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'type', must be one of '%s'",
-                $this->container['type'],
-                implode("', '", $allowedValues)
-            );
+        if ($this->container['channel'] === null) {
+            $invalidProperties[] = "'channel' can't be null";
         }
-
-        if ($this->container['id'] === null) {
-            $invalidProperties[] = "'id' can't be null";
-        }
-        if ($this->container['attributes'] === null) {
-            $invalidProperties[] = "'attributes' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalidProperties[] = "'links' can't be null";
+        if ($this->container['content'] === null) {
+            $invalidProperties[] = "'content' can't be null";
         }
         return $invalidProperties;
     }
@@ -257,107 +238,121 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets type
+     * Gets name
      *
      * @return string
      */
-    public function getType()
+    public function getName()
     {
-        return $this->container['type'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets type
+     * Sets name
      *
-     * @param string $type type
+     * @param string $name name
      *
      * @return self
      */
-    public function setType($type)
+    public function setName($name)
     {
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['type'] = $type;
+        $this->container['name'] = $name;
 
         return $this;
     }
 
     /**
-     * Gets id
+     * Gets channel
      *
      * @return string
      */
-    public function getId()
+    public function getChannel()
     {
-        return $this->container['id'];
+        return $this->container['channel'];
     }
 
     /**
-     * Sets id
+     * Sets channel
      *
-     * @param string $id id
+     * @param string $channel channel
      *
      * @return self
      */
-    public function setId($id)
+    public function setChannel($channel)
     {
-        $this->container['id'] = $id;
+        $this->container['channel'] = $channel;
 
         return $this;
     }
 
     /**
-     * Gets attributes
+     * Gets content
      *
-     * @return \KlaviyoBeta\Model\IncludedProfilesAttributes
+     * @return \KlaviyoBeta\Model\IncludedFlowMessagesAttributesContent
      */
-    public function getAttributes()
+    public function getContent()
     {
-        return $this->container['attributes'];
+        return $this->container['content'];
     }
 
     /**
-     * Sets attributes
+     * Sets content
      *
-     * @param \KlaviyoBeta\Model\IncludedProfilesAttributes $attributes attributes
+     * @param \KlaviyoBeta\Model\IncludedFlowMessagesAttributesContent $content content
      *
      * @return self
      */
-    public function setAttributes($attributes)
+    public function setContent($content)
     {
-        $this->container['attributes'] = $attributes;
+        $this->container['content'] = $content;
 
         return $this;
     }
 
     /**
-     * Gets links
+     * Gets created
      *
-     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
+     * @return \DateTime|null
      */
-    public function getLinks()
+    public function getCreated()
     {
-        return $this->container['links'];
+        return $this->container['created'];
     }
 
     /**
-     * Sets links
+     * Sets created
      *
-     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
+     * @param \DateTime|null $created created
      *
      * @return self
      */
-    public function setLinks($links)
+    public function setCreated($created)
     {
-        $this->container['links'] = $links;
+        $this->container['created'] = $created;
+
+        return $this;
+    }
+
+    /**
+     * Gets updated
+     *
+     * @return \DateTime|null
+     */
+    public function getUpdated()
+    {
+        return $this->container['updated'];
+    }
+
+    /**
+     * Sets updated
+     *
+     * @param \DateTime|null $updated updated
+     *
+     * @return self
+     */
+    public function setUpdated($updated)
+    {
+        $this->container['updated'] = $updated;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * IncludedProfiles
+ * IncludedCategoriesAttributes
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoBeta\ObjectSerializer;
 
 /**
- * IncludedProfiles Class Doc Comment
+ * IncludedCategoriesAttributes Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoBeta
@@ -41,7 +41,7 @@ use \KlaviyoBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
+class IncludedCategoriesAttributes implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'IncludedProfiles';
+    protected static $openAPIModelName = 'IncludedCategories_attributes';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,9 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => 'string',
-        'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\IncludedProfilesAttributes',
-        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
+        'external_id' => 'string',
+        'name' => 'string',
+        'updated' => '\DateTime'
     ];
 
     /**
@@ -72,10 +71,9 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'type' => null,
-        'id' => null,
-        'attributes' => null,
-        'links' => null
+        'external_id' => null,
+        'name' => null,
+        'updated' => 'date-time'
     ];
 
     /**
@@ -105,10 +103,9 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => 'type',
-        'id' => 'id',
-        'attributes' => 'attributes',
-        'links' => 'links'
+        'external_id' => 'external_id',
+        'name' => 'name',
+        'updated' => 'updated'
     ];
 
     /**
@@ -117,10 +114,9 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'id' => 'setId',
-        'attributes' => 'setAttributes',
-        'links' => 'setLinks'
+        'external_id' => 'setExternalId',
+        'name' => 'setName',
+        'updated' => 'setUpdated'
     ];
 
     /**
@@ -129,10 +125,9 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'id' => 'getId',
-        'attributes' => 'getAttributes',
-        'links' => 'getLinks'
+        'external_id' => 'getExternalId',
+        'name' => 'getName',
+        'updated' => 'getUpdated'
     ];
 
     /**
@@ -176,19 +171,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    public const TYPE_PROFILE = 'profile';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getTypeAllowableValues()
-    {
-        return [
-            self::TYPE_PROFILE,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -205,10 +187,9 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['type'] = $data['type'] ?? null;
-        $this->container['id'] = $data['id'] ?? null;
-        $this->container['attributes'] = $data['attributes'] ?? null;
-        $this->container['links'] = $data['links'] ?? null;
+        $this->container['external_id'] = $data['external_id'] ?? null;
+        $this->container['name'] = $data['name'] ?? null;
+        $this->container['updated'] = $data['updated'] ?? null;
     }
 
     /**
@@ -220,27 +201,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
-        }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'type', must be one of '%s'",
-                $this->container['type'],
-                implode("', '", $allowedValues)
-            );
-        }
-
-        if ($this->container['id'] === null) {
-            $invalidProperties[] = "'id' can't be null";
-        }
-        if ($this->container['attributes'] === null) {
-            $invalidProperties[] = "'attributes' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalidProperties[] = "'links' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -257,107 +217,73 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets type
+     * Gets external_id
      *
-     * @return string
+     * @return string|null
      */
-    public function getType()
+    public function getExternalId()
     {
-        return $this->container['type'];
+        return $this->container['external_id'];
     }
 
     /**
-     * Sets type
+     * Sets external_id
      *
-     * @param string $type type
+     * @param string|null $external_id external_id
      *
      * @return self
      */
-    public function setType($type)
+    public function setExternalId($external_id)
     {
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['type'] = $type;
+        $this->container['external_id'] = $external_id;
 
         return $this;
     }
 
     /**
-     * Gets id
+     * Gets name
      *
-     * @return string
+     * @return string|null
      */
-    public function getId()
+    public function getName()
     {
-        return $this->container['id'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets id
+     * Sets name
      *
-     * @param string $id id
+     * @param string|null $name name
      *
      * @return self
      */
-    public function setId($id)
+    public function setName($name)
     {
-        $this->container['id'] = $id;
+        $this->container['name'] = $name;
 
         return $this;
     }
 
     /**
-     * Gets attributes
+     * Gets updated
      *
-     * @return \KlaviyoBeta\Model\IncludedProfilesAttributes
+     * @return \DateTime|null
      */
-    public function getAttributes()
+    public function getUpdated()
     {
-        return $this->container['attributes'];
+        return $this->container['updated'];
     }
 
     /**
-     * Sets attributes
+     * Sets updated
      *
-     * @param \KlaviyoBeta\Model\IncludedProfilesAttributes $attributes attributes
+     * @param \DateTime|null $updated updated
      *
      * @return self
      */
-    public function setAttributes($attributes)
+    public function setUpdated($updated)
     {
-        $this->container['attributes'] = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Gets links
-     *
-     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
-     */
-    public function getLinks()
-    {
-        return $this->container['links'];
-    }
-
-    /**
-     * Sets links
-     *
-     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
-     *
-     * @return self
-     */
-    public function setLinks($links)
-    {
-        $this->container['links'] = $links;
+        $this->container['updated'] = $updated;
 
         return $this;
     }

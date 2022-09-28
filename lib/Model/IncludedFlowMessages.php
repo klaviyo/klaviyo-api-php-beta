@@ -60,8 +60,8 @@ class IncludedFlowMessages implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $openAPITypes = [
         'type' => 'string',
         'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\GetFlowMessageResponseCollectionDataInnerAttributes',
-        'links' => '\KlaviyoBeta\Model\GetCatalogItemResponseCollectionWithIncludedSectionDataInnerLinks'
+        'attributes' => '\KlaviyoBeta\Model\IncludedFlowMessagesAttributes',
+        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
     ];
 
     /**
@@ -317,7 +317,7 @@ class IncludedFlowMessages implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets attributes
      *
-     * @return \KlaviyoBeta\Model\GetFlowMessageResponseCollectionDataInnerAttributes
+     * @return \KlaviyoBeta\Model\IncludedFlowMessagesAttributes
      */
     public function getAttributes()
     {
@@ -327,7 +327,7 @@ class IncludedFlowMessages implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets attributes
      *
-     * @param \KlaviyoBeta\Model\GetFlowMessageResponseCollectionDataInnerAttributes $attributes attributes
+     * @param \KlaviyoBeta\Model\IncludedFlowMessagesAttributes $attributes attributes
      *
      * @return self
      */
@@ -341,7 +341,7 @@ class IncludedFlowMessages implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets links
      *
-     * @return \KlaviyoBeta\Model\GetCatalogItemResponseCollectionWithIncludedSectionDataInnerLinks
+     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
      */
     public function getLinks()
     {
@@ -351,7 +351,7 @@ class IncludedFlowMessages implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets links
      *
-     * @param \KlaviyoBeta\Model\GetCatalogItemResponseCollectionWithIncludedSectionDataInnerLinks $links links
+     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
      *
      * @return self
      */

@@ -58,7 +58,7 @@ class ListMembersAddQuery implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\KlaviyoBeta\Model\GetEventResponseCollectionWithIncludedSectionDataInnerRelationshipsProfilesDataInner[]'
+        'data' => '\KlaviyoBeta\Model\ListMembersAddQueryDataInner[]'
     ];
 
     /**
@@ -210,7 +210,7 @@ class ListMembersAddQuery implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets data
      *
-     * @return \KlaviyoBeta\Model\GetEventResponseCollectionWithIncludedSectionDataInnerRelationshipsProfilesDataInner[]
+     * @return \KlaviyoBeta\Model\ListMembersAddQueryDataInner[]
      */
     public function getData()
     {
@@ -220,7 +220,7 @@ class ListMembersAddQuery implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets data
      *
-     * @param \KlaviyoBeta\Model\GetEventResponseCollectionWithIncludedSectionDataInnerRelationshipsProfilesDataInner[] $data data
+     * @param \KlaviyoBeta\Model\ListMembersAddQueryDataInner[] $data data
      *
      * @return self
      */

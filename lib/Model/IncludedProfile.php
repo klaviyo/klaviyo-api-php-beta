@@ -1,6 +1,6 @@
 <?php
 /**
- * IncludedProfiles
+ * IncludedProfile
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoBeta\ObjectSerializer;
 
 /**
- * IncludedProfiles Class Doc Comment
+ * IncludedProfile Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoBeta
@@ -41,7 +41,7 @@ use \KlaviyoBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
+class IncludedProfile implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'IncludedProfiles';
+    protected static $openAPIModelName = 'IncludedProfile';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

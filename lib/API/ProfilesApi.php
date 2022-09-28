@@ -2453,12 +2453,11 @@ class ProfilesApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response
+     * @return void
      */
     public function subscribeProfiles($subscription_create_job_create_query, $apiKey = null)
     {
-        list($response) = $this->subscribeProfilesWithHttpInfo($subscription_create_job_create_query, $apiKey);
-        return $response;
+        $this->subscribeProfilesWithHttpInfo($subscription_create_job_create_query, $apiKey);
     }
 
     /**
@@ -2470,7 +2469,7 @@ class ProfilesApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscribeProfilesWithHttpInfo($subscription_create_job_create_query, $apiKey = null)
     {
@@ -2511,103 +2510,10 @@ class ProfilesApi
                 );
             }
 
-            switch($statusCode) {
-                case 202:
-                    if ('array<string,mixed>' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('array&lt;string,mixed&gt;' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 400:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 500:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = 'array<string,mixed>';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-
-            $parsed_content = json_decode(json_encode($content), TRUE);
-            if (json_last_error() != JSON_ERROR_NONE) {
-                $parsed_content = $content;
-            }
-
-            return [
-                $parsed_content,
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
+            return [null, $statusCode, $response->getHeaders()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
-                case 202:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'array<string,mixed>',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
@@ -2661,32 +2567,14 @@ class ProfilesApi
      */
     public function subscribeProfilesAsyncWithHttpInfo($subscription_create_job_create_query, $apiKey = null)
     {
-        $returnType = 'array<string,mixed>';
+        $returnType = '';
         $request = $this->subscribeProfilesRequest($subscription_create_job_create_query, $apiKey);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
+                    return [null, $response->getStatusCode(), $response->getHeaders()];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();
@@ -2816,12 +2704,11 @@ class ProfilesApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response
+     * @return void
      */
     public function suppressProfiles($suppression_create_job_create_query, $apiKey = null)
     {
-        list($response) = $this->suppressProfilesWithHttpInfo($suppression_create_job_create_query, $apiKey);
-        return $response;
+        $this->suppressProfilesWithHttpInfo($suppression_create_job_create_query, $apiKey);
     }
 
     /**
@@ -2833,7 +2720,7 @@ class ProfilesApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function suppressProfilesWithHttpInfo($suppression_create_job_create_query, $apiKey = null)
     {
@@ -2874,103 +2761,10 @@ class ProfilesApi
                 );
             }
 
-            switch($statusCode) {
-                case 202:
-                    if ('array<string,mixed>' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('array&lt;string,mixed&gt;' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 400:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 500:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = 'array<string,mixed>';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-
-            $parsed_content = json_decode(json_encode($content), TRUE);
-            if (json_last_error() != JSON_ERROR_NONE) {
-                $parsed_content = $content;
-            }
-
-            return [
-                $parsed_content,
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
+            return [null, $statusCode, $response->getHeaders()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
-                case 202:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'array<string,mixed>',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
@@ -3024,32 +2818,14 @@ class ProfilesApi
      */
     public function suppressProfilesAsyncWithHttpInfo($suppression_create_job_create_query, $apiKey = null)
     {
-        $returnType = 'array<string,mixed>';
+        $returnType = '';
         $request = $this->suppressProfilesRequest($suppression_create_job_create_query, $apiKey);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
+                    return [null, $response->getStatusCode(), $response->getHeaders()];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();
@@ -3179,12 +2955,11 @@ class ProfilesApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response
+     * @return void
      */
     public function unsubscribeProfiles($unsubscription_create_job_create_query, $apiKey = null)
     {
-        list($response) = $this->unsubscribeProfilesWithHttpInfo($unsubscription_create_job_create_query, $apiKey);
-        return $response;
+        $this->unsubscribeProfilesWithHttpInfo($unsubscription_create_job_create_query, $apiKey);
     }
 
     /**
@@ -3196,7 +2971,7 @@ class ProfilesApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function unsubscribeProfilesWithHttpInfo($unsubscription_create_job_create_query, $apiKey = null)
     {
@@ -3237,103 +3012,10 @@ class ProfilesApi
                 );
             }
 
-            switch($statusCode) {
-                case 202:
-                    if ('array<string,mixed>' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('array&lt;string,mixed&gt;' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 400:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 500:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = 'array<string,mixed>';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-
-            $parsed_content = json_decode(json_encode($content), TRUE);
-            if (json_last_error() != JSON_ERROR_NONE) {
-                $parsed_content = $content;
-            }
-
-            return [
-                $parsed_content,
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
+            return [null, $statusCode, $response->getHeaders()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
-                case 202:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'array<string,mixed>',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
@@ -3387,32 +3069,14 @@ class ProfilesApi
      */
     public function unsubscribeProfilesAsyncWithHttpInfo($unsubscription_create_job_create_query, $apiKey = null)
     {
-        $returnType = 'array<string,mixed>';
+        $returnType = '';
         $request = $this->unsubscribeProfilesRequest($unsubscription_create_job_create_query, $apiKey);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
+                    return [null, $response->getStatusCode(), $response->getHeaders()];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();
@@ -3542,12 +3206,11 @@ class ProfilesApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response
+     * @return void
      */
     public function unsuppressProfiles($unsuppression_create_job_create_query, $apiKey = null)
     {
-        list($response) = $this->unsuppressProfilesWithHttpInfo($unsuppression_create_job_create_query, $apiKey);
-        return $response;
+        $this->unsuppressProfilesWithHttpInfo($unsuppression_create_job_create_query, $apiKey);
     }
 
     /**
@@ -3559,7 +3222,7 @@ class ProfilesApi
      *
      * @throws \KlaviyoBeta\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of array<string,mixed>|\KlaviyoBeta\Model\GetCatalogItems400Response|\KlaviyoBeta\Model\GetCatalogItems400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function unsuppressProfilesWithHttpInfo($unsuppression_create_job_create_query, $apiKey = null)
     {
@@ -3600,103 +3263,10 @@ class ProfilesApi
                 );
             }
 
-            switch($statusCode) {
-                case 202:
-                    if ('array<string,mixed>' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('array&lt;string,mixed&gt;' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 400:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 500:
-                    if ('\KlaviyoBeta\Model\GetCatalogItems400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoBeta\Model\GetCatalogItems400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = 'array<string,mixed>';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-
-            $parsed_content = json_decode(json_encode($content), TRUE);
-            if (json_last_error() != JSON_ERROR_NONE) {
-                $parsed_content = $content;
-            }
-
-            return [
-                $parsed_content,
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
+            return [null, $statusCode, $response->getHeaders()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
-                case 202:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'array<string,mixed>',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
@@ -3750,32 +3320,14 @@ class ProfilesApi
      */
     public function unsuppressProfilesAsyncWithHttpInfo($unsuppression_create_job_create_query, $apiKey = null)
     {
-        $returnType = 'array<string,mixed>';
+        $returnType = '';
         $request = $this->unsuppressProfilesRequest($unsuppression_create_job_create_query, $apiKey);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
+                    return [null, $response->getStatusCode(), $response->getHeaders()];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();

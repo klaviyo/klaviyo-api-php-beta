@@ -61,7 +61,7 @@ class CatalogCategoryUpdateQueryAsSubResource implements ModelInterface, ArrayAc
         'type' => 'string',
         'id' => 'string',
         'attributes' => '\KlaviyoBeta\Model\CatalogCategoryUpdateQueryAsSubResourceAttributes',
-        'relationships' => '\KlaviyoBeta\Model\GetCatalogItemCreateJobResponseCollectionWithIncludedSectionDataInnerRelationships'
+        'relationships' => '\KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceRelationships'
     ];
 
     /**
@@ -338,7 +338,7 @@ class CatalogCategoryUpdateQueryAsSubResource implements ModelInterface, ArrayAc
     /**
      * Gets relationships
      *
-     * @return \KlaviyoBeta\Model\GetCatalogItemCreateJobResponseCollectionWithIncludedSectionDataInnerRelationships|null
+     * @return \KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceRelationships|null
      */
     public function getRelationships()
     {
@@ -348,7 +348,7 @@ class CatalogCategoryUpdateQueryAsSubResource implements ModelInterface, ArrayAc
     /**
      * Sets relationships
      *
-     * @param \KlaviyoBeta\Model\GetCatalogItemCreateJobResponseCollectionWithIncludedSectionDataInnerRelationships|null $relationships relationships
+     * @param \KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceRelationships|null $relationships relationships
      *
      * @return self
      */

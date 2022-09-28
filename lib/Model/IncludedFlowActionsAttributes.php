@@ -1,6 +1,6 @@
 <?php
 /**
- * IncludedProfiles
+ * IncludedFlowActionsAttributes
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoBeta\ObjectSerializer;
 
 /**
- * IncludedProfiles Class Doc Comment
+ * IncludedFlowActionsAttributes Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoBeta
@@ -41,7 +41,7 @@ use \KlaviyoBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
+class IncludedFlowActionsAttributes implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'IncludedProfiles';
+    protected static $openAPIModelName = 'IncludedFlowActions_attributes';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,14 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => 'string',
-        'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\IncludedProfilesAttributes',
-        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
+        'action_type' => 'string',
+        'status' => 'string',
+        'created' => '\DateTime',
+        'updated' => '\DateTime',
+        'settings' => 'object',
+        'tracking_options' => '\KlaviyoBeta\Model\IncludedFlowActionsAttributesTrackingOptions',
+        'send_options' => '\KlaviyoBeta\Model\SendOptions',
+        'render_options' => '\KlaviyoBeta\Model\SMSRenderOptions'
     ];
 
     /**
@@ -72,10 +76,14 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'type' => null,
-        'id' => null,
-        'attributes' => null,
-        'links' => null
+        'action_type' => null,
+        'status' => null,
+        'created' => 'date-time',
+        'updated' => 'date-time',
+        'settings' => null,
+        'tracking_options' => null,
+        'send_options' => null,
+        'render_options' => null
     ];
 
     /**
@@ -105,10 +113,14 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => 'type',
-        'id' => 'id',
-        'attributes' => 'attributes',
-        'links' => 'links'
+        'action_type' => 'action_type',
+        'status' => 'status',
+        'created' => 'created',
+        'updated' => 'updated',
+        'settings' => 'settings',
+        'tracking_options' => 'tracking_options',
+        'send_options' => 'send_options',
+        'render_options' => 'render_options'
     ];
 
     /**
@@ -117,10 +129,14 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'id' => 'setId',
-        'attributes' => 'setAttributes',
-        'links' => 'setLinks'
+        'action_type' => 'setActionType',
+        'status' => 'setStatus',
+        'created' => 'setCreated',
+        'updated' => 'setUpdated',
+        'settings' => 'setSettings',
+        'tracking_options' => 'setTrackingOptions',
+        'send_options' => 'setSendOptions',
+        'render_options' => 'setRenderOptions'
     ];
 
     /**
@@ -129,10 +145,14 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'id' => 'getId',
-        'attributes' => 'getAttributes',
-        'links' => 'getLinks'
+        'action_type' => 'getActionType',
+        'status' => 'getStatus',
+        'created' => 'getCreated',
+        'updated' => 'getUpdated',
+        'settings' => 'getSettings',
+        'tracking_options' => 'getTrackingOptions',
+        'send_options' => 'getSendOptions',
+        'render_options' => 'getRenderOptions'
     ];
 
     /**
@@ -176,19 +196,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    public const TYPE_PROFILE = 'profile';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getTypeAllowableValues()
-    {
-        return [
-            self::TYPE_PROFILE,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -205,10 +212,14 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['type'] = $data['type'] ?? null;
-        $this->container['id'] = $data['id'] ?? null;
-        $this->container['attributes'] = $data['attributes'] ?? null;
-        $this->container['links'] = $data['links'] ?? null;
+        $this->container['action_type'] = $data['action_type'] ?? null;
+        $this->container['status'] = $data['status'] ?? null;
+        $this->container['created'] = $data['created'] ?? null;
+        $this->container['updated'] = $data['updated'] ?? null;
+        $this->container['settings'] = $data['settings'] ?? null;
+        $this->container['tracking_options'] = $data['tracking_options'] ?? null;
+        $this->container['send_options'] = $data['send_options'] ?? null;
+        $this->container['render_options'] = $data['render_options'] ?? null;
     }
 
     /**
@@ -220,27 +231,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
-        }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'type', must be one of '%s'",
-                $this->container['type'],
-                implode("', '", $allowedValues)
-            );
-        }
-
-        if ($this->container['id'] === null) {
-            $invalidProperties[] = "'id' can't be null";
-        }
-        if ($this->container['attributes'] === null) {
-            $invalidProperties[] = "'attributes' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalidProperties[] = "'links' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -257,107 +247,193 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets type
+     * Gets action_type
      *
-     * @return string
+     * @return string|null
      */
-    public function getType()
+    public function getActionType()
     {
-        return $this->container['type'];
+        return $this->container['action_type'];
     }
 
     /**
-     * Sets type
+     * Sets action_type
      *
-     * @param string $type type
+     * @param string|null $action_type action_type
      *
      * @return self
      */
-    public function setType($type)
+    public function setActionType($action_type)
     {
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['type'] = $type;
+        $this->container['action_type'] = $action_type;
 
         return $this;
     }
 
     /**
-     * Gets id
+     * Gets status
      *
-     * @return string
+     * @return string|null
      */
-    public function getId()
+    public function getStatus()
     {
-        return $this->container['id'];
+        return $this->container['status'];
     }
 
     /**
-     * Sets id
+     * Sets status
      *
-     * @param string $id id
+     * @param string|null $status status
      *
      * @return self
      */
-    public function setId($id)
+    public function setStatus($status)
     {
-        $this->container['id'] = $id;
+        $this->container['status'] = $status;
 
         return $this;
     }
 
     /**
-     * Gets attributes
+     * Gets created
      *
-     * @return \KlaviyoBeta\Model\IncludedProfilesAttributes
+     * @return \DateTime|null
      */
-    public function getAttributes()
+    public function getCreated()
     {
-        return $this->container['attributes'];
+        return $this->container['created'];
     }
 
     /**
-     * Sets attributes
+     * Sets created
      *
-     * @param \KlaviyoBeta\Model\IncludedProfilesAttributes $attributes attributes
+     * @param \DateTime|null $created created
      *
      * @return self
      */
-    public function setAttributes($attributes)
+    public function setCreated($created)
     {
-        $this->container['attributes'] = $attributes;
+        $this->container['created'] = $created;
 
         return $this;
     }
 
     /**
-     * Gets links
+     * Gets updated
      *
-     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
+     * @return \DateTime|null
      */
-    public function getLinks()
+    public function getUpdated()
     {
-        return $this->container['links'];
+        return $this->container['updated'];
     }
 
     /**
-     * Sets links
+     * Sets updated
      *
-     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
+     * @param \DateTime|null $updated updated
      *
      * @return self
      */
-    public function setLinks($links)
+    public function setUpdated($updated)
     {
-        $this->container['links'] = $links;
+        $this->container['updated'] = $updated;
+
+        return $this;
+    }
+
+    /**
+     * Gets settings
+     *
+     * @return object|null
+     */
+    public function getSettings()
+    {
+        return $this->container['settings'];
+    }
+
+    /**
+     * Sets settings
+     *
+     * @param object|null $settings settings
+     *
+     * @return self
+     */
+    public function setSettings($settings)
+    {
+        $this->container['settings'] = $settings;
+
+        return $this;
+    }
+
+    /**
+     * Gets tracking_options
+     *
+     * @return \KlaviyoBeta\Model\IncludedFlowActionsAttributesTrackingOptions|null
+     */
+    public function getTrackingOptions()
+    {
+        return $this->container['tracking_options'];
+    }
+
+    /**
+     * Sets tracking_options
+     *
+     * @param \KlaviyoBeta\Model\IncludedFlowActionsAttributesTrackingOptions|null $tracking_options tracking_options
+     *
+     * @return self
+     */
+    public function setTrackingOptions($tracking_options)
+    {
+        $this->container['tracking_options'] = $tracking_options;
+
+        return $this;
+    }
+
+    /**
+     * Gets send_options
+     *
+     * @return \KlaviyoBeta\Model\SendOptions|null
+     */
+    public function getSendOptions()
+    {
+        return $this->container['send_options'];
+    }
+
+    /**
+     * Sets send_options
+     *
+     * @param \KlaviyoBeta\Model\SendOptions|null $send_options send_options
+     *
+     * @return self
+     */
+    public function setSendOptions($send_options)
+    {
+        $this->container['send_options'] = $send_options;
+
+        return $this;
+    }
+
+    /**
+     * Gets render_options
+     *
+     * @return \KlaviyoBeta\Model\SMSRenderOptions|null
+     */
+    public function getRenderOptions()
+    {
+        return $this->container['render_options'];
+    }
+
+    /**
+     * Sets render_options
+     *
+     * @param \KlaviyoBeta\Model\SMSRenderOptions|null $render_options render_options
+     *
+     * @return self
+     */
+    public function setRenderOptions($render_options)
+    {
+        $this->container['render_options'] = $render_options;
 
         return $this;
     }
