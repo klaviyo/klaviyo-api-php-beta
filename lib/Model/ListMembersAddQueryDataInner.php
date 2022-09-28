@@ -1,6 +1,6 @@
 <?php
 /**
- * IncludedProfiles
+ * ListMembersAddQueryDataInner
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoBeta\ObjectSerializer;
 
 /**
- * IncludedProfiles Class Doc Comment
+ * ListMembersAddQueryDataInner Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoBeta
@@ -41,7 +41,7 @@ use \KlaviyoBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
+class ListMembersAddQueryDataInner implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'IncludedProfiles';
+    protected static $openAPIModelName = 'ListMembersAddQuery_data_inner';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -59,9 +59,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\IncludedProfilesAttributes',
-        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
+        'id' => 'string'
     ];
 
     /**
@@ -73,9 +71,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'type' => null,
-        'id' => null,
-        'attributes' => null,
-        'links' => null
+        'id' => null
     ];
 
     /**
@@ -106,9 +102,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'type' => 'type',
-        'id' => 'id',
-        'attributes' => 'attributes',
-        'links' => 'links'
+        'id' => 'id'
     ];
 
     /**
@@ -118,9 +112,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'type' => 'setType',
-        'id' => 'setId',
-        'attributes' => 'setAttributes',
-        'links' => 'setLinks'
+        'id' => 'setId'
     ];
 
     /**
@@ -130,9 +122,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'type' => 'getType',
-        'id' => 'getId',
-        'attributes' => 'getAttributes',
-        'links' => 'getLinks'
+        'id' => 'getId'
     ];
 
     /**
@@ -207,8 +197,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $this->container['type'] = $data['type'] ?? null;
         $this->container['id'] = $data['id'] ?? null;
-        $this->container['attributes'] = $data['attributes'] ?? null;
-        $this->container['links'] = $data['links'] ?? null;
     }
 
     /**
@@ -234,12 +222,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['id'] === null) {
             $invalidProperties[] = "'id' can't be null";
-        }
-        if ($this->container['attributes'] === null) {
-            $invalidProperties[] = "'attributes' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalidProperties[] = "'links' can't be null";
         }
         return $invalidProperties;
     }
@@ -310,54 +292,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setId($id)
     {
         $this->container['id'] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Gets attributes
-     *
-     * @return \KlaviyoBeta\Model\IncludedProfilesAttributes
-     */
-    public function getAttributes()
-    {
-        return $this->container['attributes'];
-    }
-
-    /**
-     * Sets attributes
-     *
-     * @param \KlaviyoBeta\Model\IncludedProfilesAttributes $attributes attributes
-     *
-     * @return self
-     */
-    public function setAttributes($attributes)
-    {
-        $this->container['attributes'] = $attributes;
-
-        return $this;
-    }
-
-    /**
-     * Gets links
-     *
-     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
-     */
-    public function getLinks()
-    {
-        return $this->container['links'];
-    }
-
-    /**
-     * Sets links
-     *
-     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
-     *
-     * @return self
-     */
-    public function setLinks($links)
-    {
-        $this->container['links'] = $links;
 
         return $this;
     }

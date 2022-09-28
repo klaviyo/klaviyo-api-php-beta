@@ -1,6 +1,6 @@
 <?php
 /**
- * IncludedProfiles
+ * IncludedMetricsAttributes
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoBeta\ObjectSerializer;
 
 /**
- * IncludedProfiles Class Doc Comment
+ * IncludedMetricsAttributes Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoBeta
@@ -41,7 +41,7 @@ use \KlaviyoBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
+class IncludedMetricsAttributes implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'IncludedProfiles';
+    protected static $openAPIModelName = 'IncludedMetrics_attributes';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => 'string',
-        'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\IncludedProfilesAttributes',
-        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
+        'name' => 'string',
+        'created' => 'string',
+        'updated' => 'string',
+        'integration' => 'object'
     ];
 
     /**
@@ -72,10 +72,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'type' => null,
-        'id' => null,
-        'attributes' => null,
-        'links' => null
+        'name' => null,
+        'created' => null,
+        'updated' => null,
+        'integration' => null
     ];
 
     /**
@@ -105,10 +105,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => 'type',
-        'id' => 'id',
-        'attributes' => 'attributes',
-        'links' => 'links'
+        'name' => 'name',
+        'created' => 'created',
+        'updated' => 'updated',
+        'integration' => 'integration'
     ];
 
     /**
@@ -117,10 +117,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'id' => 'setId',
-        'attributes' => 'setAttributes',
-        'links' => 'setLinks'
+        'name' => 'setName',
+        'created' => 'setCreated',
+        'updated' => 'setUpdated',
+        'integration' => 'setIntegration'
     ];
 
     /**
@@ -129,10 +129,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'id' => 'getId',
-        'attributes' => 'getAttributes',
-        'links' => 'getLinks'
+        'name' => 'getName',
+        'created' => 'getCreated',
+        'updated' => 'getUpdated',
+        'integration' => 'getIntegration'
     ];
 
     /**
@@ -176,19 +176,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    public const TYPE_PROFILE = 'profile';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getTypeAllowableValues()
-    {
-        return [
-            self::TYPE_PROFILE,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -205,10 +192,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['type'] = $data['type'] ?? null;
-        $this->container['id'] = $data['id'] ?? null;
-        $this->container['attributes'] = $data['attributes'] ?? null;
-        $this->container['links'] = $data['links'] ?? null;
+        $this->container['name'] = $data['name'] ?? null;
+        $this->container['created'] = $data['created'] ?? null;
+        $this->container['updated'] = $data['updated'] ?? null;
+        $this->container['integration'] = $data['integration'] ?? null;
     }
 
     /**
@@ -220,27 +207,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
-        }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'type', must be one of '%s'",
-                $this->container['type'],
-                implode("', '", $allowedValues)
-            );
-        }
-
-        if ($this->container['id'] === null) {
-            $invalidProperties[] = "'id' can't be null";
-        }
-        if ($this->container['attributes'] === null) {
-            $invalidProperties[] = "'attributes' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalidProperties[] = "'links' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -257,107 +223,97 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets type
+     * Gets name
      *
-     * @return string
+     * @return string|null
      */
-    public function getType()
+    public function getName()
     {
-        return $this->container['type'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets type
+     * Sets name
      *
-     * @param string $type type
+     * @param string|null $name name
      *
      * @return self
      */
-    public function setType($type)
+    public function setName($name)
     {
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['type'] = $type;
+        $this->container['name'] = $name;
 
         return $this;
     }
 
     /**
-     * Gets id
+     * Gets created
      *
-     * @return string
+     * @return string|null
      */
-    public function getId()
+    public function getCreated()
     {
-        return $this->container['id'];
+        return $this->container['created'];
     }
 
     /**
-     * Sets id
+     * Sets created
      *
-     * @param string $id id
+     * @param string|null $created created
      *
      * @return self
      */
-    public function setId($id)
+    public function setCreated($created)
     {
-        $this->container['id'] = $id;
+        $this->container['created'] = $created;
 
         return $this;
     }
 
     /**
-     * Gets attributes
+     * Gets updated
      *
-     * @return \KlaviyoBeta\Model\IncludedProfilesAttributes
+     * @return string|null
      */
-    public function getAttributes()
+    public function getUpdated()
     {
-        return $this->container['attributes'];
+        return $this->container['updated'];
     }
 
     /**
-     * Sets attributes
+     * Sets updated
      *
-     * @param \KlaviyoBeta\Model\IncludedProfilesAttributes $attributes attributes
+     * @param string|null $updated updated
      *
      * @return self
      */
-    public function setAttributes($attributes)
+    public function setUpdated($updated)
     {
-        $this->container['attributes'] = $attributes;
+        $this->container['updated'] = $updated;
 
         return $this;
     }
 
     /**
-     * Gets links
+     * Gets integration
      *
-     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
+     * @return object|null
      */
-    public function getLinks()
+    public function getIntegration()
     {
-        return $this->container['links'];
+        return $this->container['integration'];
     }
 
     /**
-     * Sets links
+     * Sets integration
      *
-     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
+     * @param object|null $integration integration
      *
      * @return self
      */
-    public function setLinks($links)
+    public function setIntegration($integration)
     {
-        $this->container['links'] = $links;
+        $this->container['integration'] = $integration;
 
         return $this;
     }

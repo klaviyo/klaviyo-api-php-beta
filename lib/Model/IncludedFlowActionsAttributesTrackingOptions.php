@@ -1,6 +1,6 @@
 <?php
 /**
- * IncludedProfiles
+ * IncludedFlowActionsAttributesTrackingOptions
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoBeta\ObjectSerializer;
 
 /**
- * IncludedProfiles Class Doc Comment
+ * IncludedFlowActionsAttributesTrackingOptions Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoBeta
@@ -41,7 +41,7 @@ use \KlaviyoBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
+class IncludedFlowActionsAttributesTrackingOptions implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'IncludedProfiles';
+    protected static $openAPIModelName = 'IncludedFlowActions_attributes_tracking_options';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => 'string',
-        'id' => 'string',
-        'attributes' => '\KlaviyoBeta\Model\IncludedProfilesAttributes',
-        'links' => '\KlaviyoBeta\Model\IncludedVariantsLinks'
+        'add_utm' => 'bool',
+        'utm_params' => '\KlaviyoBeta\Model\UtmParamInfo[]',
+        'is_tracking_opens' => 'bool',
+        'is_tracking_clicks' => 'bool'
     ];
 
     /**
@@ -72,10 +72,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'type' => null,
-        'id' => null,
-        'attributes' => null,
-        'links' => null
+        'add_utm' => null,
+        'utm_params' => null,
+        'is_tracking_opens' => null,
+        'is_tracking_clicks' => null
     ];
 
     /**
@@ -105,10 +105,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => 'type',
-        'id' => 'id',
-        'attributes' => 'attributes',
-        'links' => 'links'
+        'add_utm' => 'add_utm',
+        'utm_params' => 'utm_params',
+        'is_tracking_opens' => 'is_tracking_opens',
+        'is_tracking_clicks' => 'is_tracking_clicks'
     ];
 
     /**
@@ -117,10 +117,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'id' => 'setId',
-        'attributes' => 'setAttributes',
-        'links' => 'setLinks'
+        'add_utm' => 'setAddUtm',
+        'utm_params' => 'setUtmParams',
+        'is_tracking_opens' => 'setIsTrackingOpens',
+        'is_tracking_clicks' => 'setIsTrackingClicks'
     ];
 
     /**
@@ -129,10 +129,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'id' => 'getId',
-        'attributes' => 'getAttributes',
-        'links' => 'getLinks'
+        'add_utm' => 'getAddUtm',
+        'utm_params' => 'getUtmParams',
+        'is_tracking_opens' => 'getIsTrackingOpens',
+        'is_tracking_clicks' => 'getIsTrackingClicks'
     ];
 
     /**
@@ -176,19 +176,6 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    public const TYPE_PROFILE = 'profile';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getTypeAllowableValues()
-    {
-        return [
-            self::TYPE_PROFILE,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -205,10 +192,10 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['type'] = $data['type'] ?? null;
-        $this->container['id'] = $data['id'] ?? null;
-        $this->container['attributes'] = $data['attributes'] ?? null;
-        $this->container['links'] = $data['links'] ?? null;
+        $this->container['add_utm'] = $data['add_utm'] ?? null;
+        $this->container['utm_params'] = $data['utm_params'] ?? null;
+        $this->container['is_tracking_opens'] = $data['is_tracking_opens'] ?? null;
+        $this->container['is_tracking_clicks'] = $data['is_tracking_clicks'] ?? null;
     }
 
     /**
@@ -220,26 +207,17 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
+        if ($this->container['add_utm'] === null) {
+            $invalidProperties[] = "'add_utm' can't be null";
         }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'type', must be one of '%s'",
-                $this->container['type'],
-                implode("', '", $allowedValues)
-            );
+        if ($this->container['utm_params'] === null) {
+            $invalidProperties[] = "'utm_params' can't be null";
         }
-
-        if ($this->container['id'] === null) {
-            $invalidProperties[] = "'id' can't be null";
+        if ($this->container['is_tracking_opens'] === null) {
+            $invalidProperties[] = "'is_tracking_opens' can't be null";
         }
-        if ($this->container['attributes'] === null) {
-            $invalidProperties[] = "'attributes' can't be null";
-        }
-        if ($this->container['links'] === null) {
-            $invalidProperties[] = "'links' can't be null";
+        if ($this->container['is_tracking_clicks'] === null) {
+            $invalidProperties[] = "'is_tracking_clicks' can't be null";
         }
         return $invalidProperties;
     }
@@ -257,107 +235,97 @@ class IncludedProfiles implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets type
+     * Gets add_utm
      *
-     * @return string
+     * @return bool
      */
-    public function getType()
+    public function getAddUtm()
     {
-        return $this->container['type'];
+        return $this->container['add_utm'];
     }
 
     /**
-     * Sets type
+     * Sets add_utm
      *
-     * @param string $type type
+     * @param bool $add_utm add_utm
      *
      * @return self
      */
-    public function setType($type)
+    public function setAddUtm($add_utm)
     {
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['type'] = $type;
+        $this->container['add_utm'] = $add_utm;
 
         return $this;
     }
 
     /**
-     * Gets id
+     * Gets utm_params
      *
-     * @return string
+     * @return \KlaviyoBeta\Model\UtmParamInfo[]
      */
-    public function getId()
+    public function getUtmParams()
     {
-        return $this->container['id'];
+        return $this->container['utm_params'];
     }
 
     /**
-     * Sets id
+     * Sets utm_params
      *
-     * @param string $id id
+     * @param \KlaviyoBeta\Model\UtmParamInfo[] $utm_params utm_params
      *
      * @return self
      */
-    public function setId($id)
+    public function setUtmParams($utm_params)
     {
-        $this->container['id'] = $id;
+        $this->container['utm_params'] = $utm_params;
 
         return $this;
     }
 
     /**
-     * Gets attributes
+     * Gets is_tracking_opens
      *
-     * @return \KlaviyoBeta\Model\IncludedProfilesAttributes
+     * @return bool
      */
-    public function getAttributes()
+    public function getIsTrackingOpens()
     {
-        return $this->container['attributes'];
+        return $this->container['is_tracking_opens'];
     }
 
     /**
-     * Sets attributes
+     * Sets is_tracking_opens
      *
-     * @param \KlaviyoBeta\Model\IncludedProfilesAttributes $attributes attributes
+     * @param bool $is_tracking_opens is_tracking_opens
      *
      * @return self
      */
-    public function setAttributes($attributes)
+    public function setIsTrackingOpens($is_tracking_opens)
     {
-        $this->container['attributes'] = $attributes;
+        $this->container['is_tracking_opens'] = $is_tracking_opens;
 
         return $this;
     }
 
     /**
-     * Gets links
+     * Gets is_tracking_clicks
      *
-     * @return \KlaviyoBeta\Model\IncludedVariantsLinks
+     * @return bool
      */
-    public function getLinks()
+    public function getIsTrackingClicks()
     {
-        return $this->container['links'];
+        return $this->container['is_tracking_clicks'];
     }
 
     /**
-     * Sets links
+     * Sets is_tracking_clicks
      *
-     * @param \KlaviyoBeta\Model\IncludedVariantsLinks $links links
+     * @param bool $is_tracking_clicks is_tracking_clicks
      *
      * @return self
      */
-    public function setLinks($links)
+    public function setIsTrackingClicks($is_tracking_clicks)
     {
-        $this->container['links'] = $links;
+        $this->container['is_tracking_clicks'] = $is_tracking_clicks;
 
         return $this;
     }

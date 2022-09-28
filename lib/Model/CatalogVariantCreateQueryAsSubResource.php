@@ -60,7 +60,7 @@ class CatalogVariantCreateQueryAsSubResource implements ModelInterface, ArrayAcc
     protected static $openAPITypes = [
         'type' => 'string',
         'attributes' => '\KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceAttributes',
-        'relationships' => '\KlaviyoBeta\Model\GetCatalogItemCreateJobResponseCollectionWithIncludedSectionDataInnerRelationships'
+        'relationships' => '\KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceRelationships'
     ];
 
     /**
@@ -305,7 +305,7 @@ class CatalogVariantCreateQueryAsSubResource implements ModelInterface, ArrayAcc
     /**
      * Gets relationships
      *
-     * @return \KlaviyoBeta\Model\GetCatalogItemCreateJobResponseCollectionWithIncludedSectionDataInnerRelationships|null
+     * @return \KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceRelationships|null
      */
     public function getRelationships()
     {
@@ -315,7 +315,7 @@ class CatalogVariantCreateQueryAsSubResource implements ModelInterface, ArrayAcc
     /**
      * Sets relationships
      *
-     * @param \KlaviyoBeta\Model\GetCatalogItemCreateJobResponseCollectionWithIncludedSectionDataInnerRelationships|null $relationships relationships
+     * @param \KlaviyoBeta\Model\CatalogVariantCreateQueryAsSubResourceRelationships|null $relationships relationships
      *
      * @return self
      */

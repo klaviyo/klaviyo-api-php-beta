@@ -1,6 +1,6 @@
 {
     "name": "klaviyo/sdk-beta",
-    "version": "1.0.1.20220907",
+    "version": "1.0.2.20220907",
     "description": "The Klaviyo REST API. Please visit https://developers.klaviyo.com for more details.",
     "keywords": [
         "openapitools",
