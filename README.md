@@ -1,8 +1,8 @@
-### DEPRECATION NOTICE: this latest BETA API / BETA SDK is being deprecated and is now in General Availbility. Please check out our latest code here: https://github.com/klaviyo/klaviyo-api-php
+### DEPRECATION NOTICE: this latest BETA API / BETA SDK is being deprecated and is now in General Availability. Please check out our latest code here: https://github.com/klaviyo/klaviyo-api-php
 
 # Klaviyo PHP SDK (Beta API) (DEPRECATED)
 
-- SDK version: 1.0.2.20220907
+- SDK version: 1.0.3.20220907
 
 ## Helpful Resources
 
