@@ -4,12 +4,6 @@
 
 - SDK version: 1.0.2.20220907
 
-## Signup Form for Beta API Access
-
-This SDK is for our new API, currently in closed Beta.
-
-To sign-up for the Beta and gain access to these gated endpoints, please fill out [this form](https://manage.kmail-lists.com/subscriptions/subscribe?a=9BX3wh&g=VSyTC6).
-
 ## Helpful Resources
 
 - [API Reference](https://developers.klaviyo.com/en/v2022-09-07.pre/reference)
