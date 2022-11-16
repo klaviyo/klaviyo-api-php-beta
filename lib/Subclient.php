@@ -1,5 +1,5 @@
 <?php
-namespace KlaviyoBeta;
+namespace KlaviyoAPIBeta;
 
 class Subclient {
 
