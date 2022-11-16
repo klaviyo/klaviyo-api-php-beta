@@ -127,7 +127,7 @@ try {
 
 # $body | associative array
 
-$klaviyo_beta->Data Privacy->createDataPrivacyDeletionJob($body);
+$klaviyo_beta->DataPrivacy->createDataPrivacyDeletionJob($body);
 ```
 
 
