@@ -5,7 +5,7 @@ use GuzzleHttp\Client as GuzzleClient;
 use KlaviyoAPIBeta\ApiException;
 use KlaviyoAPIBeta\Configuration;
 
-use KlaviyoAPIBeta\API\DataPrivacyApi;
+use KlaviyoAPIBeta\API\CampaignsApi;
 use KlaviyoAPIBeta\API\FlowsApi;
 use KlaviyoAPIBeta\API\ListsApi;
 use KlaviyoAPIBeta\API\SegmentsApi;
@@ -18,7 +18,7 @@ class KlaviyoAPIBeta {
     public $api_key = "API_KEY";
     public $wait_seconds;
     public $num_retries;
-    public $DataPrivacy;
+    public $Campaigns;
     public $Flows;
     public $Lists;
     public $Segments;
@@ -44,8 +44,8 @@ class KlaviyoAPIBeta {
         $this->config->setApiKey('Authorization',"Klaviyo-API-Key $this->api_key");
 
         
-        $this->DataPrivacy = new Subclient(
-                new DataPrivacyApi(new GuzzleClient(),$this->config),
+        $this->Campaigns = new Subclient(
+                new CampaignsApi(new GuzzleClient(),$this->config),
                 $wait_seconds = 3,
                 $num_retries = 3,
             );

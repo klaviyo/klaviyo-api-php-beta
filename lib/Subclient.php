@@ -14,7 +14,6 @@ class Subclient {
         $this->num_retries = $num_retries;
         $this->retry_codes = $retry_codes;
 
-        $this->_CURSOR_LENGTH = 44;
         $this->_CURSOR_SEARCH_TOKENS = ['page%5Bcursor%5D','page[cursor]'];
     }
 
@@ -98,11 +97,12 @@ class Subclient {
             }
 
             if ($found_token != NULL) {
+                $link=$link . '&';
                 $start = $strpos+strlen($found_token)+1;
-                $new_cursor = substr($link, $start, $this->_CURSOR_LENGTH);
-
-                return $new_cursor;
-                
+                $suffix = substr($link, $start);
+                $end = strpos($suffix, "&");
+                $new_cursor = substr($suffix, 0, $end);
+                return $new_cursor;                
             } else {
                 return $link;
             }
