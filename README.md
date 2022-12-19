@@ -124,6 +124,19 @@ try {
 
 ## Campaigns
 
+#### [Assign Campaign Message Template](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/assign_campaign_message_template)
+
+```python
+## Positional Arguments
+
+# $body | associative array
+
+$klaviyo_beta->Campaigns->assignCampaignMessageTemplate($body);
+```
+
+
+
+
 #### [Create Campaign](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_campaign)
 
 ```python
@@ -137,27 +150,14 @@ $klaviyo_beta->Campaigns->createCampaign($body);
 
 
 
-#### [Create Campaign Create Clone](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_campaign_create_clone)
+#### [Create Campaign Clone](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_campaign_clone)
 
 ```python
 ## Positional Arguments
 
 # $body | associative array
 
-$klaviyo_beta->Campaigns->createCampaignCreateClone($body);
-```
-
-
-
-
-#### [Create Campaign Message Assign Template](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/create_campaign_message_assign_template)
-
-```python
-## Positional Arguments
-
-# $body | associative array
-
-$klaviyo_beta->Campaigns->createCampaignMessageAssignTemplate($body);
+$klaviyo_beta->Campaigns->createCampaignClone($body);
 ```
 
 

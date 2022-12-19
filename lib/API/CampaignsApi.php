@@ -117,6 +117,369 @@ class CampaignsApi
     }
 
     /**
+     * Operation assignCampaignMessageTemplate
+     *
+     * Assign Campaign Message Template
+     *
+     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
+     *
+     * @throws \KlaviyoAPIBeta\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return array<string,mixed>|\KlaviyoAPIBeta\Model\GetCampaigns400Response|\KlaviyoAPIBeta\Model\GetCampaigns400Response
+     */
+    public function assignCampaignMessageTemplate($campaign_message_assign_template_query, $apiKey = null)
+    {
+        list($response) = $this->assignCampaignMessageTemplateWithHttpInfo($campaign_message_assign_template_query, $apiKey);
+        return $response;
+    }
+
+    /**
+     * Operation assignCampaignMessageTemplateWithHttpInfo
+     *
+     * Assign Campaign Message Template
+     *
+     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
+     *
+     * @throws \KlaviyoAPIBeta\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return array of array<string,mixed>|\KlaviyoAPIBeta\Model\GetCampaigns400Response|\KlaviyoAPIBeta\Model\GetCampaigns400Response, HTTP status code, HTTP response headers (array of strings)
+     */
+    public function assignCampaignMessageTemplateWithHttpInfo($campaign_message_assign_template_query, $apiKey = null)
+    {
+        $request = $this->assignCampaignMessageTemplateRequest($campaign_message_assign_template_query, $apiKey);
+
+        try {
+            $options = $this->createHttpClientOption();
+            try {
+                $response = $this->client->send($request, $options);
+            } catch (RequestException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    (int) $e->getCode(),
+                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
+                    $e->getResponse() ? (string) $e->getResponse()->getBody() : null
+                );
+            } catch (ConnectException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    (int) $e->getCode(),
+                    null,
+                    null
+                );
+            }
+
+            $statusCode = $response->getStatusCode();
+
+            if ($statusCode < 200 || $statusCode > 299) {
+                throw new ApiException(
+                    sprintf(
+                        '[%d] Error connecting to the API (%s)',
+                        $statusCode,
+                        (string) $request->getUri()
+                    ),
+                    $statusCode,
+                    $response->getHeaders(),
+                    (string) $response->getBody()
+                );
+            }
+
+            switch($statusCode) {
+                case 201:
+                    if ('array<string,mixed>' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                        if ('array&lt;string,mixed&gt;' !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+
+                    $parsed_content = json_decode(json_encode($content), TRUE);
+                    if (json_last_error() != JSON_ERROR_NONE) {
+                        $parsed_content = $content;
+                    }
+
+                    return [
+                        $parsed_content,
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 400:
+                    if ('\KlaviyoAPIBeta\Model\GetCampaigns400Response' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                        if ('\KlaviyoAPIBeta\Model\GetCampaigns400Response' !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+
+                    $parsed_content = json_decode(json_encode($content), TRUE);
+                    if (json_last_error() != JSON_ERROR_NONE) {
+                        $parsed_content = $content;
+                    }
+
+                    return [
+                        $parsed_content,
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 500:
+                    if ('\KlaviyoAPIBeta\Model\GetCampaigns400Response' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                        if ('\KlaviyoAPIBeta\Model\GetCampaigns400Response' !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+
+                    $parsed_content = json_decode(json_encode($content), TRUE);
+                    if (json_last_error() != JSON_ERROR_NONE) {
+                        $parsed_content = $content;
+                    }
+
+                    return [
+                        $parsed_content,
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+            }
+
+            $returnType = 'array<string,mixed>';
+            if ($returnType === '\SplFileObject') {
+                $content = $response->getBody(); //stream goes to serializer
+            } else {
+                $content = (string) $response->getBody();
+                if ($returnType !== 'string') {
+                    $content = json_decode($content);
+                }
+            }
+
+            $parsed_content = json_decode(json_encode($content), TRUE);
+            if (json_last_error() != JSON_ERROR_NONE) {
+                $parsed_content = $content;
+            }
+
+            return [
+                $parsed_content,
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
+
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 201:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        'array<string,mixed>',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 400:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\KlaviyoAPIBeta\Model\GetCampaigns400Response',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 500:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\KlaviyoAPIBeta\Model\GetCampaigns400Response',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+            }
+            throw $e;
+        }
+    }
+
+    /**
+     * Operation assignCampaignMessageTemplateAsync
+     *
+     * Assign Campaign Message Template
+     *
+     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function assignCampaignMessageTemplateAsync($campaign_message_assign_template_query, $apiKey = null)
+    {
+        return $this->assignCampaignMessageTemplateAsyncWithHttpInfo($campaign_message_assign_template_query, $apiKey)
+            ->then(
+                function ($response) {
+                    return $response[0];
+                }
+            );
+    }
+
+    /**
+     * Operation assignCampaignMessageTemplateAsyncWithHttpInfo
+     *
+     * Assign Campaign Message Template
+     *
+     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function assignCampaignMessageTemplateAsyncWithHttpInfo($campaign_message_assign_template_query, $apiKey = null)
+    {
+        $returnType = 'array<string,mixed>';
+        $request = $this->assignCampaignMessageTemplateRequest($campaign_message_assign_template_query, $apiKey);
+
+        return $this->client
+            ->sendAsync($request, $this->createHttpClientOption())
+            ->then(
+                function ($response) use ($returnType) {
+                    if ($returnType === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                        if ($returnType !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+                    $parsed_content = json_decode(json_encode($content), TRUE);
+                    if (json_last_error() != JSON_ERROR_NONE) {
+                        $parsed_content = $content;
+                    }
+
+                    return [
+                        $parsed_content,
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                },
+                function ($exception) {
+                    $response = $exception->getResponse();
+                    $statusCode = $response->getStatusCode();
+                    throw new ApiException(
+                        sprintf(
+                            '[%d] Error connecting to the API (%s)',
+                            $statusCode,
+                            $exception->getRequest()->getUri()
+                        ),
+                        $statusCode,
+                        $response->getHeaders(),
+                        (string) $response->getBody()
+                    );
+                }
+            );
+    }
+
+    /**
+     * Create request for operation 'assignCampaignMessageTemplate'
+     *
+     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Psr7\Request
+     */
+    public function assignCampaignMessageTemplateRequest($campaign_message_assign_template_query, $apiKey = null)
+    {
+        // verify the required parameter 'campaign_message_assign_template_query' is set
+        if ($campaign_message_assign_template_query === null || (is_array($campaign_message_assign_template_query) && count($campaign_message_assign_template_query) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $campaign_message_assign_template_query when calling assignCampaignMessageTemplate'
+            );
+        }
+
+        $resourcePath = '/api/campaign-message-assign-templates/';
+        $formParams = [];
+        $queryParams = [];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+
+
+
+
+        if ($multipart) {
+            $headers = $this->headerSelector->selectHeadersForMultipart(
+                ['application/json']
+            );
+        } else {
+            $headers = $this->headerSelector->selectHeaders(
+                ['application/json'],
+                ['application/json']
+            );
+        }
+
+        // for model (json/xml)
+        if (isset($campaign_message_assign_template_query)) {
+            if ($headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($campaign_message_assign_template_query));
+            } else {
+                $httpBody = $campaign_message_assign_template_query;
+            }
+        } elseif (count($formParams) > 0) {
+            if ($multipart) {
+                $multipartContents = [];
+                foreach ($formParams as $formParamName => $formParamValue) {
+                    $formParamValueItems = is_array($formParamValue) ? $formParamValue : [$formParamValue];
+                    foreach ($formParamValueItems as $formParamValueItem) {
+                        $multipartContents[] = [
+                            'name' => $formParamName,
+                            'contents' => $formParamValueItem
+                        ];
+                    }
+                }
+                // for HTTP post (form)
+                $httpBody = new MultipartStream($multipartContents);
+
+            } elseif ($headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode($formParams);
+
+            } else {
+                // for HTTP post (form)
+                $httpBody = ObjectSerializer::buildQuery($formParams);
+            }
+        }
+
+        // this endpoint requires API key authentication
+        if ($apiKey == null) {
+            $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
+        } else {
+            $apiKey = 'Klaviyo-API-Key '.$apiKey;
+        }
+
+        $headers['Authorization'] = $apiKey;
+
+
+        $defaultHeaders = [];
+        if ($this->config->getUserAgent()) {
+            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
+        }
+
+        $defaultHeaders['revision'] = ['2022-12-15.pre'];
+
+        $headers = array_merge(
+            $defaultHeaders,
+            $headerParams,
+            $headers
+        );
+
+        $query = ObjectSerializer::buildQuery($queryParams);
+        return new Request(
+            'POST',
+            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
+            $headers,
+            $httpBody
+        );
+    }
+
+    /**
      * Operation createCampaign
      *
      * Create Campaign
@@ -480,9 +843,9 @@ class CampaignsApi
     }
 
     /**
-     * Operation createCampaignCreateClone
+     * Operation createCampaignClone
      *
-     * Create Campaign Create Clone
+     * Create Campaign Clone
      *
      * @param  \KlaviyoAPIBeta\Model\CampaignCloneQuery $campaign_clone_query Clones a campaign from an existing campaign (required)
      *
@@ -490,16 +853,16 @@ class CampaignsApi
      * @throws \InvalidArgumentException
      * @return array<string,mixed>|\KlaviyoAPIBeta\Model\GetCampaigns400Response|\KlaviyoAPIBeta\Model\GetCampaigns400Response
      */
-    public function createCampaignCreateClone($campaign_clone_query, $apiKey = null)
+    public function createCampaignClone($campaign_clone_query, $apiKey = null)
     {
-        list($response) = $this->createCampaignCreateCloneWithHttpInfo($campaign_clone_query, $apiKey);
+        list($response) = $this->createCampaignCloneWithHttpInfo($campaign_clone_query, $apiKey);
         return $response;
     }
 
     /**
-     * Operation createCampaignCreateCloneWithHttpInfo
+     * Operation createCampaignCloneWithHttpInfo
      *
-     * Create Campaign Create Clone
+     * Create Campaign Clone
      *
      * @param  \KlaviyoAPIBeta\Model\CampaignCloneQuery $campaign_clone_query Clones a campaign from an existing campaign (required)
      *
@@ -507,9 +870,9 @@ class CampaignsApi
      * @throws \InvalidArgumentException
      * @return array of array<string,mixed>|\KlaviyoAPIBeta\Model\GetCampaigns400Response|\KlaviyoAPIBeta\Model\GetCampaigns400Response, HTTP status code, HTTP response headers (array of strings)
      */
-    public function createCampaignCreateCloneWithHttpInfo($campaign_clone_query, $apiKey = null)
+    public function createCampaignCloneWithHttpInfo($campaign_clone_query, $apiKey = null)
     {
-        $request = $this->createCampaignCreateCloneRequest($campaign_clone_query, $apiKey);
+        $request = $this->createCampaignCloneRequest($campaign_clone_query, $apiKey);
 
         try {
             $options = $this->createHttpClientOption();
@@ -665,18 +1028,18 @@ class CampaignsApi
     }
 
     /**
-     * Operation createCampaignCreateCloneAsync
+     * Operation createCampaignCloneAsync
      *
-     * Create Campaign Create Clone
+     * Create Campaign Clone
      *
      * @param  \KlaviyoAPIBeta\Model\CampaignCloneQuery $campaign_clone_query Clones a campaign from an existing campaign (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createCampaignCreateCloneAsync($campaign_clone_query, $apiKey = null)
+    public function createCampaignCloneAsync($campaign_clone_query, $apiKey = null)
     {
-        return $this->createCampaignCreateCloneAsyncWithHttpInfo($campaign_clone_query, $apiKey)
+        return $this->createCampaignCloneAsyncWithHttpInfo($campaign_clone_query, $apiKey)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -685,19 +1048,19 @@ class CampaignsApi
     }
 
     /**
-     * Operation createCampaignCreateCloneAsyncWithHttpInfo
+     * Operation createCampaignCloneAsyncWithHttpInfo
      *
-     * Create Campaign Create Clone
+     * Create Campaign Clone
      *
      * @param  \KlaviyoAPIBeta\Model\CampaignCloneQuery $campaign_clone_query Clones a campaign from an existing campaign (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createCampaignCreateCloneAsyncWithHttpInfo($campaign_clone_query, $apiKey = null)
+    public function createCampaignCloneAsyncWithHttpInfo($campaign_clone_query, $apiKey = null)
     {
         $returnType = 'array<string,mixed>';
-        $request = $this->createCampaignCreateCloneRequest($campaign_clone_query, $apiKey);
+        $request = $this->createCampaignCloneRequest($campaign_clone_query, $apiKey);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -741,19 +1104,19 @@ class CampaignsApi
     }
 
     /**
-     * Create request for operation 'createCampaignCreateClone'
+     * Create request for operation 'createCampaignClone'
      *
      * @param  \KlaviyoAPIBeta\Model\CampaignCloneQuery $campaign_clone_query Clones a campaign from an existing campaign (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function createCampaignCreateCloneRequest($campaign_clone_query, $apiKey = null)
+    public function createCampaignCloneRequest($campaign_clone_query, $apiKey = null)
     {
         // verify the required parameter 'campaign_clone_query' is set
         if ($campaign_clone_query === null || (is_array($campaign_clone_query) && count($campaign_clone_query) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $campaign_clone_query when calling createCampaignCreateClone'
+                'Missing the required parameter $campaign_clone_query when calling createCampaignClone'
             );
         }
 
@@ -785,369 +1148,6 @@ class CampaignsApi
                 $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($campaign_clone_query));
             } else {
                 $httpBody = $campaign_clone_query;
-            }
-        } elseif (count($formParams) > 0) {
-            if ($multipart) {
-                $multipartContents = [];
-                foreach ($formParams as $formParamName => $formParamValue) {
-                    $formParamValueItems = is_array($formParamValue) ? $formParamValue : [$formParamValue];
-                    foreach ($formParamValueItems as $formParamValueItem) {
-                        $multipartContents[] = [
-                            'name' => $formParamName,
-                            'contents' => $formParamValueItem
-                        ];
-                    }
-                }
-                // for HTTP post (form)
-                $httpBody = new MultipartStream($multipartContents);
-
-            } elseif ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($formParams);
-
-            } else {
-                // for HTTP post (form)
-                $httpBody = ObjectSerializer::buildQuery($formParams);
-            }
-        }
-
-        // this endpoint requires API key authentication
-        if ($apiKey == null) {
-            $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
-        } else {
-            $apiKey = 'Klaviyo-API-Key '.$apiKey;
-        }
-
-        $headers['Authorization'] = $apiKey;
-
-
-        $defaultHeaders = [];
-        if ($this->config->getUserAgent()) {
-            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
-        }
-
-        $defaultHeaders['revision'] = ['2022-12-15.pre'];
-
-        $headers = array_merge(
-            $defaultHeaders,
-            $headerParams,
-            $headers
-        );
-
-        $query = ObjectSerializer::buildQuery($queryParams);
-        return new Request(
-            'POST',
-            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
-            $headers,
-            $httpBody
-        );
-    }
-
-    /**
-     * Operation createCampaignMessageAssignTemplate
-     *
-     * Create Campaign Message Assign Template
-     *
-     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
-     *
-     * @throws \KlaviyoAPIBeta\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return array<string,mixed>|\KlaviyoAPIBeta\Model\GetCampaigns400Response|\KlaviyoAPIBeta\Model\GetCampaigns400Response
-     */
-    public function createCampaignMessageAssignTemplate($campaign_message_assign_template_query, $apiKey = null)
-    {
-        list($response) = $this->createCampaignMessageAssignTemplateWithHttpInfo($campaign_message_assign_template_query, $apiKey);
-        return $response;
-    }
-
-    /**
-     * Operation createCampaignMessageAssignTemplateWithHttpInfo
-     *
-     * Create Campaign Message Assign Template
-     *
-     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
-     *
-     * @throws \KlaviyoAPIBeta\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return array of array<string,mixed>|\KlaviyoAPIBeta\Model\GetCampaigns400Response|\KlaviyoAPIBeta\Model\GetCampaigns400Response, HTTP status code, HTTP response headers (array of strings)
-     */
-    public function createCampaignMessageAssignTemplateWithHttpInfo($campaign_message_assign_template_query, $apiKey = null)
-    {
-        $request = $this->createCampaignMessageAssignTemplateRequest($campaign_message_assign_template_query, $apiKey);
-
-        try {
-            $options = $this->createHttpClientOption();
-            try {
-                $response = $this->client->send($request, $options);
-            } catch (RequestException $e) {
-                throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
-                    (int) $e->getCode(),
-                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
-                    $e->getResponse() ? (string) $e->getResponse()->getBody() : null
-                );
-            } catch (ConnectException $e) {
-                throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
-                    (int) $e->getCode(),
-                    null,
-                    null
-                );
-            }
-
-            $statusCode = $response->getStatusCode();
-
-            if ($statusCode < 200 || $statusCode > 299) {
-                throw new ApiException(
-                    sprintf(
-                        '[%d] Error connecting to the API (%s)',
-                        $statusCode,
-                        (string) $request->getUri()
-                    ),
-                    $statusCode,
-                    $response->getHeaders(),
-                    (string) $response->getBody()
-                );
-            }
-
-            switch($statusCode) {
-                case 201:
-                    if ('array<string,mixed>' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('array&lt;string,mixed&gt;' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 400:
-                    if ('\KlaviyoAPIBeta\Model\GetCampaigns400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoAPIBeta\Model\GetCampaigns400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 500:
-                    if ('\KlaviyoAPIBeta\Model\GetCampaigns400Response' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ('\KlaviyoAPIBeta\Model\GetCampaigns400Response' !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = 'array<string,mixed>';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-
-            $parsed_content = json_decode(json_encode($content), TRUE);
-            if (json_last_error() != JSON_ERROR_NONE) {
-                $parsed_content = $content;
-            }
-
-            return [
-                $parsed_content,
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
-
-        } catch (ApiException $e) {
-            switch ($e->getCode()) {
-                case 201:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'array<string,mixed>',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 400:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\KlaviyoAPIBeta\Model\GetCampaigns400Response',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 500:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\KlaviyoAPIBeta\Model\GetCampaigns400Response',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-            }
-            throw $e;
-        }
-    }
-
-    /**
-     * Operation createCampaignMessageAssignTemplateAsync
-     *
-     * Create Campaign Message Assign Template
-     *
-     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function createCampaignMessageAssignTemplateAsync($campaign_message_assign_template_query, $apiKey = null)
-    {
-        return $this->createCampaignMessageAssignTemplateAsyncWithHttpInfo($campaign_message_assign_template_query, $apiKey)
-            ->then(
-                function ($response) {
-                    return $response[0];
-                }
-            );
-    }
-
-    /**
-     * Operation createCampaignMessageAssignTemplateAsyncWithHttpInfo
-     *
-     * Create Campaign Message Assign Template
-     *
-     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function createCampaignMessageAssignTemplateAsyncWithHttpInfo($campaign_message_assign_template_query, $apiKey = null)
-    {
-        $returnType = 'array<string,mixed>';
-        $request = $this->createCampaignMessageAssignTemplateRequest($campaign_message_assign_template_query, $apiKey);
-
-        return $this->client
-            ->sendAsync($request, $this->createHttpClientOption())
-            ->then(
-                function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    $parsed_content = json_decode(json_encode($content), TRUE);
-                    if (json_last_error() != JSON_ERROR_NONE) {
-                        $parsed_content = $content;
-                    }
-
-                    return [
-                        $parsed_content,
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                },
-                function ($exception) {
-                    $response = $exception->getResponse();
-                    $statusCode = $response->getStatusCode();
-                    throw new ApiException(
-                        sprintf(
-                            '[%d] Error connecting to the API (%s)',
-                            $statusCode,
-                            $exception->getRequest()->getUri()
-                        ),
-                        $statusCode,
-                        $response->getHeaders(),
-                        (string) $response->getBody()
-                    );
-                }
-            );
-    }
-
-    /**
-     * Create request for operation 'createCampaignMessageAssignTemplate'
-     *
-     * @param  \KlaviyoAPIBeta\Model\CampaignMessageAssignTemplateQuery $campaign_message_assign_template_query Takes a reusable template, clones it, and assigns the non-reusable clone to the message. (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Psr7\Request
-     */
-    public function createCampaignMessageAssignTemplateRequest($campaign_message_assign_template_query, $apiKey = null)
-    {
-        // verify the required parameter 'campaign_message_assign_template_query' is set
-        if ($campaign_message_assign_template_query === null || (is_array($campaign_message_assign_template_query) && count($campaign_message_assign_template_query) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $campaign_message_assign_template_query when calling createCampaignMessageAssignTemplate'
-            );
-        }
-
-        $resourcePath = '/api/campaign-message-assign-templates/';
-        $formParams = [];
-        $queryParams = [];
-        $headerParams = [];
-        $httpBody = '';
-        $multipart = false;
-
-
-
-
-
-        if ($multipart) {
-            $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
-            );
-        } else {
-            $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
-                ['application/json']
-            );
-        }
-
-        // for model (json/xml)
-        if (isset($campaign_message_assign_template_query)) {
-            if ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($campaign_message_assign_template_query));
-            } else {
-                $httpBody = $campaign_message_assign_template_query;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {
