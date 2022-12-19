@@ -60,7 +60,7 @@ class IncludedProfile implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'type' => 'string',
         'id' => 'string',
-        'attributes' => '\KlaviyoAPIBeta\Model\IncludedProfilesAttributes',
+        'attributes' => '\KlaviyoAPIBeta\Model\IncludedProfileAttributes',
         'links' => '\KlaviyoAPIBeta\Model\GetListTagResponseCollectionDataInnerLinks'
     ];
 
@@ -317,7 +317,7 @@ class IncludedProfile implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attributes
      *
-     * @return \KlaviyoAPIBeta\Model\IncludedProfilesAttributes
+     * @return \KlaviyoAPIBeta\Model\IncludedProfileAttributes
      */
     public function getAttributes()
     {
@@ -327,7 +327,7 @@ class IncludedProfile implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attributes
      *
-     * @param \KlaviyoAPIBeta\Model\IncludedProfilesAttributes $attributes attributes
+     * @param \KlaviyoAPIBeta\Model\IncludedProfileAttributes $attributes attributes
      *
      * @return self
      */

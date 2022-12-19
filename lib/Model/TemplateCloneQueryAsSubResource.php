@@ -58,8 +58,7 @@ class TemplateCloneQueryAsSubResource implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => 'string',
-        'attributes' => '\KlaviyoAPIBeta\Model\TemplateCloneQueryAsSubResourceAttributes'
+        'id' => 'mixed'
     ];
 
     /**
@@ -70,8 +69,7 @@ class TemplateCloneQueryAsSubResource implements ModelInterface, ArrayAccess, \J
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'type' => null,
-        'attributes' => null
+        'id' => null
     ];
 
     /**
@@ -101,8 +99,7 @@ class TemplateCloneQueryAsSubResource implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => 'type',
-        'attributes' => 'attributes'
+        'id' => 'id'
     ];
 
     /**
@@ -111,8 +108,7 @@ class TemplateCloneQueryAsSubResource implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'attributes' => 'setAttributes'
+        'id' => 'setId'
     ];
 
     /**
@@ -121,8 +117,7 @@ class TemplateCloneQueryAsSubResource implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'attributes' => 'getAttributes'
+        'id' => 'getId'
     ];
 
     /**
@@ -166,19 +161,6 @@ class TemplateCloneQueryAsSubResource implements ModelInterface, ArrayAccess, \J
         return self::$openAPIModelName;
     }
 
-    public const TYPE_TEMPLATE = 'template';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getTypeAllowableValues()
-    {
-        return [
-            self::TYPE_TEMPLATE,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -195,8 +177,7 @@ class TemplateCloneQueryAsSubResource implements ModelInterface, ArrayAccess, \J
      */
     public function __construct(array $data = null)
     {
-        $this->container['type'] = $data['type'] ?? null;
-        $this->container['attributes'] = $data['attributes'] ?? null;
+        $this->container['id'] = $data['id'] ?? null;
     }
 
     /**
@@ -208,20 +189,8 @@ class TemplateCloneQueryAsSubResource implements ModelInterface, ArrayAccess, \J
     {
         $invalidProperties = [];
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
-        }
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!is_null($this->container['type']) && !in_array($this->container['type'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'type', must be one of '%s'",
-                $this->container['type'],
-                implode("', '", $allowedValues)
-            );
-        }
-
-        if ($this->container['attributes'] === null) {
-            $invalidProperties[] = "'attributes' can't be null";
+        if ($this->container['id'] === null) {
+            $invalidProperties[] = "'id' can't be null";
         }
         return $invalidProperties;
     }
@@ -239,59 +208,25 @@ class TemplateCloneQueryAsSubResource implements ModelInterface, ArrayAccess, \J
 
 
     /**
-     * Gets type
+     * Gets id
      *
-     * @return string
+     * @return mixed
      */
-    public function getType()
+    public function getId()
     {
-        return $this->container['type'];
+        return $this->container['id'];
     }
 
     /**
-     * Sets type
+     * Sets id
      *
-     * @param string $type type
+     * @param mixed $id The ID of MessageTemplate
      *
      * @return self
      */
-    public function setType($type)
+    public function setId($id)
     {
-        $allowedValues = $this->getTypeAllowableValues();
-        if (!in_array($type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'type', must be one of '%s'",
-                    $type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets attributes
-     *
-     * @return \KlaviyoAPIBeta\Model\TemplateCloneQueryAsSubResourceAttributes
-     */
-    public function getAttributes()
-    {
-        return $this->container['attributes'];
-    }
-
-    /**
-     * Sets attributes
-     *
-     * @param \KlaviyoAPIBeta\Model\TemplateCloneQueryAsSubResourceAttributes $attributes attributes
-     *
-     * @return self
-     */
-    public function setAttributes($attributes)
-    {
-        $this->container['attributes'] = $attributes;
+        $this->container['id'] = $id;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * ProfileCreateQueryAsSubResourceAttributes
+ * IncludedProfileAttributes
  *
  * PHP version 7.4
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \KlaviyoAPIBeta\ObjectSerializer;
 
 /**
- * ProfileCreateQueryAsSubResourceAttributes Class Doc Comment
+ * IncludedProfileAttributes Class Doc Comment
  *
  * @category Class
  * @package  KlaviyoAPIBeta
@@ -41,7 +41,7 @@ use \KlaviyoAPIBeta\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class ProfileCreateQueryAsSubResourceAttributes implements ModelInterface, ArrayAccess, \JsonSerializable
+class IncludedProfileAttributes implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class ProfileCreateQueryAsSubResourceAttributes implements ModelInterface, Array
       *
       * @var string
       */
-    protected static $openAPIModelName = 'ProfileCreateQueryAsSubResource_attributes';
+    protected static $openAPIModelName = 'IncludedProfile_attributes';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -67,6 +67,9 @@ class ProfileCreateQueryAsSubResourceAttributes implements ModelInterface, Array
         'organization' => 'string',
         'title' => 'string',
         'image' => 'string',
+        'created' => '\DateTime',
+        'updated' => '\DateTime',
+        'last_event_date' => '\DateTime',
         'location' => '\KlaviyoAPIBeta\Model\ProfileLocation',
         'properties' => 'object'
     ];
@@ -88,6 +91,9 @@ class ProfileCreateQueryAsSubResourceAttributes implements ModelInterface, Array
         'organization' => null,
         'title' => null,
         'image' => null,
+        'created' => 'date-time',
+        'updated' => 'date-time',
+        'last_event_date' => 'date-time',
         'location' => null,
         'properties' => null
     ];
@@ -128,6 +134,9 @@ class ProfileCreateQueryAsSubResourceAttributes implements ModelInterface, Array
         'organization' => 'organization',
         'title' => 'title',
         'image' => 'image',
+        'created' => 'created',
+        'updated' => 'updated',
+        'last_event_date' => 'last_event_date',
         'location' => 'location',
         'properties' => 'properties'
     ];
@@ -147,6 +156,9 @@ class ProfileCreateQueryAsSubResourceAttributes implements ModelInterface, Array
         'organization' => 'setOrganization',
         'title' => 'setTitle',
         'image' => 'setImage',
+        'created' => 'setCreated',
+        'updated' => 'setUpdated',
+        'last_event_date' => 'setLastEventDate',
         'location' => 'setLocation',
         'properties' => 'setProperties'
     ];
@@ -166,6 +178,9 @@ class ProfileCreateQueryAsSubResourceAttributes implements ModelInterface, Array
         'organization' => 'getOrganization',
         'title' => 'getTitle',
         'image' => 'getImage',
+        'created' => 'getCreated',
+        'updated' => 'getUpdated',
+        'last_event_date' => 'getLastEventDate',
         'location' => 'getLocation',
         'properties' => 'getProperties'
     ];
@@ -236,6 +251,9 @@ class ProfileCreateQueryAsSubResourceAttributes implements ModelInterface, Array
         $this->container['organization'] = $data['organization'] ?? null;
         $this->container['title'] = $data['title'] ?? null;
         $this->container['image'] = $data['image'] ?? null;
+        $this->container['created'] = $data['created'] ?? null;
+        $this->container['updated'] = $data['updated'] ?? null;
+        $this->container['last_event_date'] = $data['last_event_date'] ?? null;
         $this->container['location'] = $data['location'] ?? null;
         $this->container['properties'] = $data['properties'] ?? null;
     }
@@ -476,6 +494,78 @@ class ProfileCreateQueryAsSubResourceAttributes implements ModelInterface, Array
     public function setImage($image)
     {
         $this->container['image'] = $image;
+
+        return $this;
+    }
+
+    /**
+     * Gets created
+     *
+     * @return \DateTime|null
+     */
+    public function getCreated()
+    {
+        return $this->container['created'];
+    }
+
+    /**
+     * Sets created
+     *
+     * @param \DateTime|null $created created
+     *
+     * @return self
+     */
+    public function setCreated($created)
+    {
+        $this->container['created'] = $created;
+
+        return $this;
+    }
+
+    /**
+     * Gets updated
+     *
+     * @return \DateTime|null
+     */
+    public function getUpdated()
+    {
+        return $this->container['updated'];
+    }
+
+    /**
+     * Sets updated
+     *
+     * @param \DateTime|null $updated updated
+     *
+     * @return self
+     */
+    public function setUpdated($updated)
+    {
+        $this->container['updated'] = $updated;
+
+        return $this;
+    }
+
+    /**
+     * Gets last_event_date
+     *
+     * @return \DateTime|null
+     */
+    public function getLastEventDate()
+    {
+        return $this->container['last_event_date'];
+    }
+
+    /**
+     * Sets last_event_date
+     *
+     * @param \DateTime|null $last_event_date last_event_date
+     *
+     * @return self
+     */
+    public function setLastEventDate($last_event_date)
+    {
+        $this->container['last_event_date'] = $last_event_date;
 
         return $this;
     }

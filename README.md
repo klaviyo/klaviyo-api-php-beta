@@ -27,6 +27,10 @@ This SDK is organized into the following resources:
 
 
 
+- DataPrivacy
+
+
+
 - Flows
 
 
@@ -252,6 +256,23 @@ $klaviyo_beta->Campaigns->getCampaignSendJob($id, $fields_campaign_send_job=$fie
 
 
 
+#### [Get Campaign Tags](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_campaign_tags)
+
+```python
+## Positional Arguments
+
+# $campaign_id | string
+
+## Keyword Arguments
+
+# $fields_tag | string[]
+
+$klaviyo_beta->Campaigns->getCampaignTags($campaign_id, $fields_tag=$fields_tag);
+```
+
+
+
+
 #### [Get Campaigns](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/get_campaigns)
 
 ```python
@@ -307,6 +328,23 @@ $klaviyo_beta->Campaigns->updateCampaignMessage($id, $body);
 # $body | associative array
 
 $klaviyo_beta->Campaigns->updateCampaignSendJob($id, $body);
+```
+
+
+
+
+
+
+## DataPrivacy
+
+#### [Request Profile Deletion](https://developers.klaviyo.com/en/v2022-12-15.pre/reference/request_profile_deletion)
+
+```python
+## Positional Arguments
+
+# $body | associative array
+
+$klaviyo_beta->DataPrivacy->requestProfileDeletion($body);
 ```
 
 
