@@ -68,7 +68,7 @@ $klaviyo_beta = new KlaviyoAPIBeta(
     $num_retries = 3, 
     $wait_seconds = 3);
 
-$response = $klaviyo->Tags->getTags();
+$response = $klaviyo_beta->Tags->getTags();
 ```
 
 ## Retry behavior
